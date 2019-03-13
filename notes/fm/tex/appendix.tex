@@ -1,0 +1,67 @@
+\section{Important Processes}
+
+\subsection*{Geometric Brownian Motion}
+
+\paragraph{Definition}
+Let $S$ be the solution to 
+$$\dd S_t = \mu S_t \dd t + \sigma S_t \dd W_t;$$
+then $S$ follows a GBM. And $S$ can be represented as
+$$S_t = S_0 \exp \left[  (\mu - \frac{\sigma^2}{2})t + \sigma W_t \right].$$
+
+\paragraph{Properties}
+\begin{align*}
+	&\EE S_t = S_0 e^{\mu t} \\
+	&\Var S_t  = S_0^2 e^{2\mu t}( e^{\sigma^2 t} -1 )
+\end{align*}
+
+\subsection*{Ornstein–Uhlenbeck process}
+\paragraph{Definition}
+Let $r$ be the solution to 
+$$\dd r_t = \theta (\mu - r_t) \dd t + \sigma   \dd W_t;$$
+then $r$ follows an O-U process. And $r$ can be represented as 
+$$r_t = r_0 e^{-\theta t} + \mu(1 - e^{-\theta t}  ) + \sigma \int^t_0 e^{-\theta(t-s)}\dd W_s $$
+
+\paragraph{Properties} $r_t$ is normal distributed with
+$$r_t \sim \mathrm{Normal}\Big(  \mu + (y-\mu)e^{-\theta t}, \frac{\sigma^2}{2\theta}(1 - e^{-2\theta t})  \Big).$$
+And the covariance is given by
+$$\Cov(r_s, r_t) = \frac{\sigma^2}{2\theta} \left(  e^{-\theta|t-s|} - e^{-\theta (t+s)} \right).$$
+
+\section{Binomial Tree Approximation}
+
+\subsection*{Basic Setting}
+We model the stock price as 
+$$S_n = S_0 R_1 \dots R_n$$
+where 
+$$R_i \SimIID \begin{cases}
+=u \quad p^\star = \frac{1-d}{u-d} \\
+=d \quad 1-p^\star
+\end{cases}$$ 
+Let $n = \floor{\frac{t}{\epsilon}}$. Define the stock price at time $t$ as 
+$$\tilde{S}_t := \lim\limits_{ \epsilon \downarrow 0 } S_{\floor{\frac{t}{\epsilon}}}.$$
+
+\subsection*{Rescaling}
+Rescale $u$ and $d$:
+\begin{align*}
+	\begin{cases}
+	u &= e^{ a\sqrt{\epsilon} } \\
+	d &= e^{ -a\sqrt{\epsilon} }
+	\end{cases}
+\end{align*}
+Then we consider the Taylor expansion near $\epsilon = 0$,
+\begin{align*}
+	p^\star &= \frac{ 1 - e^{ -a\sqrt{\epsilon} }  }{ e^{ a\sqrt{\epsilon} } +  e^{ -a\sqrt{\epsilon} }} \\
+	&\approx \frac{1}{2} + \frac{a}{4}\sqrt{\epsilon}
+\end{align*}
+
+\subsection*{Limiting}
+Now we compute the limit distribution of $S_n$:
+\begin{align*}
+	\log \frac{S_n}{S_0} &= \sum^{\floor{\frac{t}{\epsilon}}}_{i=1} \log R_i ;
+\end{align*}
+by the central limit theorem, it is approximated normal distribution. It remains to determine its mean and variance. Because
+\begin{align*}
+	&\EE \log R_i = \frac{a^2 \epsilon}{2}, \\
+	&\Var \log R_i = ( \log \frac{u}{d} )^2 p^\star (1 - p^\star),
+\end{align*}
+we find 
+$$\log \frac{S_n}{S_0} \sim \mathrm{Normal}(  -\frac{a^2}{2}t, a^2 t ).$$

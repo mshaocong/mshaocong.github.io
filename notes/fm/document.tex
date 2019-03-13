@@ -1,0 +1,44 @@
+\documentclass[a4paper]{article} 
+
+\usepackage[utf8]{inputenc}
+%\usepackage{ctex} %中文支持
+\usepackage{hyperref} 
+\usepackage{attrib}
+
+
+\include{header}
+\include{macros}
+\include{config}
+
+
+\title{Notes on Financial Modeling} 
+\date{\today}
+
+\begin{document}
+	
+\begin{center}
+	\Large{\bf Notes on Financial Modeling}\\
+\end{center}	
+
+%\maketitle
+%\setcounter{tocdepth}{2}
+%\tableofcontents
+%\listoffigures
+%\listoftables
+ 
+%\include{./tex/section0}
+%\include{./tex/week1}  
+%\input{./tex/pre.tex}
+\input{./tex/bs_model.tex}
+\input{./tex/local_val.tex}
+\input{./tex/bd.tex}
+
+\appendix
+\input{./tex/appendix.tex}
+
+
+% Bibliography:
+%\clearpage
+%\input{./tex/mybibliography.tex}
+
+\end{document}

@@ -1,0 +1,59 @@
+\section{More Complicated Model}
+
+\subsection*{LOCAL VOLATILITY MODEL}
+\paragraph{Basic Setting}
+We consider a little bit more complicated case:
+\begin{align*} 
+\dd S_t = r S_t \dd t + \sigma(t, S_t) S_t \dd \bar{W}_t  
+\end{align*}
+where $r$, $\alpha$ are constant; and this dynamics are given on the measure $\QQ$.
+
+
+\paragraph{Dupire Formula} Now we take derivative with respect to $T$ rather than $K$.
+\begin{align*}
+\frac{\partial C}{\partial T} &= e^{-rT} \int^\infty_0 (x - K)^+ \cdot \frac{\partial p}{\partial T} \dd x \\
+&= 
+\end{align*} 
+
+\subsection*{MODEL-FREE PROPERTIES}
+
+Let $C(T,K)$ be the price of European option at time $0$ with maturity time $T$ and strike $K$. And assume $p(x)$ is the density of $S_T$ under the risk-natural measure. 
+
+\paragraph{Breeden-Litzenberger Formula} The price of European option is
+\begin{align*}
+	C(T,K) &= \EE^\star \left\{  e^{-rT}(S_T - K)^+ \right\} \\
+	&= \int^\infty_K e^{-r T}(x - K) p(x) \dd x
+\end{align*}
+Take derivative with respect to $K$ on both sides for twice
+\begin{align*}
+	\frac{\partial C}{\partial K} = -\int^\infty_K e^{-r T} p(x) \dd x \\
+	\frac{\partial^2 C}{\partial K^2} =   e^{-r T} p(K) 
+\end{align*}
+Finally, we get a model-free formula,
+$$p(K) = e^{r T} \frac{\partial^2 C}{\partial K^2}$$
+
+\paragraph{Carr-Madan Formula}  We are interested in the arbitrage-free price at time $t=0$ of a simple contingent claim $h(S_T)$. Carr-Madan formula says that this price could be obtained once we know the price of European call option.   
+\begin{align*}
+	\EE^\star \left(  e^{-rT} h(S_T) \right) &= \int^\infty_0 e^{-rT} h(x) p(x) \dd x \\
+	(\text{B-L formula})\quad &= \int^\infty_0   h(x) \frac{\partial^2 C}{\partial K^2} \dd x \\
+	(\text{Int. by part})\quad &= ( h \cdot \frac{\partial C}{\partial K} )\Big|^\infty_0 - \int^\infty_0 h'\cdot \frac{\partial^2 C}{\partial K^2} \dd x \\
+	 (\text{Int. by part})\quad &=( h \cdot \frac{\partial C}{\partial K} )\Big|^\infty_0 - \left[ (h' \cdot C)\Big|^\infty_0  - \int^\infty_0 h''\cdot C \dd x\right] \\
+\end{align*}
+Then we get the Carr-Madan formula
+$$\EE^\star \left(  e^{-rT} \Phi(S_T) \right) = h(0) e^{-rT} - h'(0) S_0 + \int^\infty_0 h''\cdot C \dd x$$
+
+\begin{example}[European Put Option]
+	Let $h: x \mapsto (K- x)^+$. We find
+	\begin{align*}
+		&h(0) = K, \\
+		&h'(0) = -1, \\
+		&h''(x) = \delta_K.
+	\end{align*}
+	By the Carr-Madan formula, the price of the European put option $P(T,K)$ is
+	\begin{align*}
+		P(T,K) &= Ke^{-rT} + S_0 +\int^\infty_0 \delta_K   \cdot C \dd x \\
+		&= Ke^{-rT} + S_0 +  C(T, K)
+	\end{align*}  
+\end{example}
+ 
+
