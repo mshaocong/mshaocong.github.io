@@ -7,6 +7,8 @@ These are the notes that I took in the past. And some of them are made for teach
 
 * Notes on Financial Modeling [here](./notes/fm/document.pdf)
 
+TODO - add more details
+
 ## Project
 TODO - introduction of project here
 
