@@ -5,6 +5,8 @@ These are the notes that I took in the past. And some of them are made for teach
 
 * Notes on Actuarial Statistics [here](./notes/Actuarial.pdf)
 
+* Notes on Financial Modeling [here](./notes/fm/document.pdf)
+
 ## Project
 TODO - introduction of project here
 
