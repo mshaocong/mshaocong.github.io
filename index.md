@@ -1,5 +1,5 @@
 ## Notes
-I typed some notes for some class I took. 
+I typed some notes for some class I took in the past. 
 
 * Probability and Financial Math
     * [Notes on Dynamical Systems](./notes/anosovnote.pdf).
