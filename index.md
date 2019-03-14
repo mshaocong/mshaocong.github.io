@@ -1,15 +1,20 @@
 ## Notes
 I typed some notes for some class I took. 
 
-* Notes on Probability [here](./notes/Prob.pdf) and [here](./notes/Prob2.pdf)
+* Probability and Financial Math
+    * [Notes on Dynamical Systems](./notes/anosovnote.pdf).
+    
+    * Notes on Probability [here](./notes/Prob.pdf) and [here](./notes/Prob2.pdf)
 
-* Notes on Actuarial Statistics [here](./notes/Actuarial.pdf)
+    * Notes on Financial Modeling [here](./notes/fm/document.pdf)
 
-* Notes on Financial Modeling [here](./notes/fm/document.pdf)
+    * Notes on Actuarial Statistics [here](./notes/Actuarial.pdf)
 
-* A Basic Statistical Notes [here](./notes/st/document.pdf)
+* Statistics and Machine Learning
 
-* An introduction to XGboost [here](./notes/xgboostppt.pdf)
+    * A Basic Statistical Notes [here](./notes/st/document.pdf)
+
+    * An introduction to XGboost [here](./notes/xgboostppt.pdf)
 
 TODO - add more details
 
