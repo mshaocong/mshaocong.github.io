@@ -1,0 +1,453 @@
+\section{Hypothesis Testing}
+\subsection{Introduction to hypothesis testing}
+
+\begin{comment} 
+\begin{tabular}{ c | l  }
+\hline
+\textbf{Notations} & \textbf{Descriptions} \\ 
+\hline
+$\mu$& $=\mathbb{E}(X)$\\
+$\Sigma$& $=\mathrm{Var}(X)$\\
+$\sigma_{YX}$& $=\mathbb{E}[Y(X-\mu)]$\\
+%$s(z,x)$& $=1 + (z-\mu)^T \Sigma^{-1} (x - \mu)$\\
+\hline 
+\end{tabular}
+\end{comment}
+
+\begin{mydef} Let $\varphi$ be a test, and $\beta_\varphi (\theta) = \EE_\theta (\varphi(X))$.
+	\begin{itemize}
+		
+		\item The\uline{ size of a test $\varphi$} is defined as 
+		$$\sup_{\theta \in \Theta_0} \beta_\varphi (\theta) = \sup_{\theta \in \Theta_0} \EE_\theta (\varphi(X)).$$ 
+		
+		\item Let $\varphi$ be a test of size $\alpha$. For any $\theta \in \Theta_1$, \uline{the power of $\varphi$ for detecting $\theta$} is 
+		$$\beta_\varphi (\theta) = \EE_\theta (\varphi(X)) = \PP_\theta ( H_0 \text{ rejected} ).$$
+	\end{itemize} 
+\end{mydef} 
+\begin{remark}
+	As a function of $\theta$, $\beta_\varphi$ is called \uline{the power function}. If $\varphi(X) = \IndOne( T(X) \in C )$, $T$ is called a \uline{test statistic}, and $C$ is called \uline{the critical region}.
+\end{remark}
+% size  null hyp正确时候，拒绝null hyp的概率 越小越好(一开始就控制住 比如小于alpha)。 power越大越好。
+
+\begin{exap}
+	$X_i \SimIID N(\mu, \sigma^s),\  \mu \in {\mu_0, \mu_1 }$ ($\mu_0 < \mu_1$), and $\sigma^2 > 0$ known.  $H_0: \mu = \mu_0$ vs $H_1: \mu = \mu_1$.
+	
+	Conider a rule $\varphi(\bar{X}) = \IndOne(\bar{X} > k)$, for some $k$, corresponding to the critical region $c_k = \{X: \bar{X}>k \}$. Fix its size:
+	$$\beta_\varphi(\mu_0) = \PP_{\mu_0}(\bar{X}> k) = 1 - \Phi( \frac{\sqrt{n}(k- \mu_0)}{\sigma} ) = \alpha.;$$
+	so we take $k$ s.t. $\frac{\sqrt{n}(k- \mu_0)}{\sigma} = \Phi^{-1}(1-\alpha)=z_{1-\alpha}$; i.e.
+	$$k = \mu_0 + \frac{\sigma}{\sqrt{n}} z_{1 - \alpha},$$
+	leading the test
+	$$\varphi(\bar{X}) = \begin{cases}
+	1 &\quad \bar{X} > \mu_0 + \frac{\sigma}{\sqrt{n}} z_{1 - \alpha} \\
+	0 &\quad \text{o.w.}
+	\end{cases}.$$
+	
+	The power function is given by
+	$$\beta_\varphi(\mu_1) = \PP_{\mu_1}( \bar{X} > \mu_0 + \frac{\sigma}{\sqrt{n}} z_{1 - \alpha} ) = 1 - \Phi( \frac{\sqrt{n}(\mu_0 - \mu_1)}{\sigma} + z_{1-\alpha} ).$$
+\end{exap}
+
+\begin{mydef}
+	Let $\Phi_\alpha$ be all test functions of size $\leq \alpha$. Then $\varphi^\ast \in \Phi_\alpha$ is said to be \uline{most powerful} against $\theta \in \Theta_1$, if
+	$$\beta_{\varphi^\ast} (\theta) \geq \beta_{\varphi} (\theta) \quad \forall \varphi \in \Phi_\alpha.$$
+	
+	And $\varphi^\ast$ is said to be \underline{uniformly most powerful} if  
+	$$\beta_{\varphi^\ast} (\theta) \geq \beta_{\varphi} (\theta) \quad \forall \varphi \in \Phi_\alpha,\ \theta \in \Theta_1.$$
+\end{mydef}
+
+
+
+\subsection{Neyman-Pearson theory}
+{\color{blue} \begin{thm}[Neyman-Pearson]
+	Let $H_0: \theta = \theta_0$ and $H_1: \theta = \theta_1$, be simple hypothese. Then
+	\begin{enumerate}[a)]
+		\item any test of the form 
+		\begin{align}
+			\varphi(x) = \begin{cases}
+			1 &\quad f_1(x)>k f_0(x) \\
+			\gamma(x) &\quad f_1(x)=k f_0(x) \\
+			0 &\quad f_1(x)<k f_0(x) \\
+			\end{cases}
+		\end{align}
+		for $k\geq 0$ and $0\leq \gamma(x) \leq 1$ is most powerful for its size.
+		
+		\item Given $\alpha\in (0,1)$, there exists a test of the form above with $\gamma(x) = \gamma$ a constant s.t. $\varphi$ has size $\alpha$.
+	\end{enumerate}
+\end{thm}}
+\begin{proof}
+	This proof is important. Because it gives us a method to construct the most powerful test under the simple hypothese.
+	
+	\textbf{For part (a)}, let $\varphi^\ast$ be a test which size is less than $\varphi$; that is,
+	$$\EE_{\theta_0} \varphi^\ast(X) \leq \EE_{\theta_0} \varphi(X).$$
+	
+	We hope prove $\EE_{\theta_1} \varphi^\ast(X) \leq \EE_{\theta_1} \varphi(X).$ Notice that 
+	\begin{align*}
+		\EE_{\theta_1} \varphi(X) - \EE_{\theta_1} \varphi^\ast(X) &\leq \EE_{\theta_1} \varphi(X) - \EE_{\theta_1} \varphi^\ast(X) - k\big[\EE_{\theta_0} \varphi(X) - \EE_{\theta_0} \varphi^\ast(X)\big] \\
+		&=\int D(x)[f_1(x) - kf_0(x) ]\ \dd x  
+	\end{align*}
+	where $D := \varphi - \varphi^\ast$. Let $A_0 = \{ f_1 < k f_0 \}$ and $A_1 = \{ f_1 > k f_0 \}$. In continuous case,
+	\begin{align*}
+		\int D(x)[f_1(x) - kf_0(x) ]\ \dd x &= \int_{A_0} D(x)[f_1(x) - kf_0(x) ]\ \dd x + \int_{A_1} D(x)[f_1(x) - kf_0(x) ]\ \dd x \\
+		&\geq 0
+	\end{align*}
+	by noticing that $D \leq 0$ on $A_0$ and $D \geq 0$ on $A_1$.
+	
+	\textbf{Part (b).} Let $\alpha \in (0,1]$. We want to find a test of the form (1) with size $\alpha$ where $\gamma(x)$ is a constant $\gamma$. Thus, we have the following equation:
+	\begin{align*}
+		\EE_{\theta_0} \varphi(X) = \alpha;
+	\end{align*}
+	that is,
+	\begin{align*}
+		\PP_{\theta_0} \Big( f_1(X) > k f_0(X) \Big) + \gamma \PP_{\theta_0} \Big( f_1(X) = k f_0(X) \Big) &= \alpha \\
+	\PP_{\theta_0} \Big( f_1(X) \leq k f_0(X) \Big) -\gamma \PP_{\theta_0} \Big( f_1(X) = k f_0(X) \Big)	 &= 1 - \alpha. \\
+	\end{align*}
+	
+	Let $\lambda = \frac{f_1}{f_0}$. $G_0$ be the CDF of $\lambda$ under $\theta_0$. So we have
+	{\color{blue}
+		\begin{align}
+		G_0(k) - \gamma \PP_{\theta_0} \Big( \lambda(X) = k \Big) = 1 - \alpha.
+		\end{align}}
+	
+	Define $k = G^{-1}_0(1-\alpha) = \inf \{ \tilde{k}: G_0(\tilde{k}) > 1- \alpha \}$.
+	
+	\begin{itemize}
+		\item \textbf{Case (i).} If $G_0$ is continuous at $k$, let $\gamma =0$.
+		
+		\item \textbf{Case (ii).} If $G_0$ is not continuous at $k$, let $\gamma = \frac{G_0(k) - (1-\alpha)}{ \PP_{\theta_0} ( \lambda(X) = k ) }$.
+	\end{itemize}
+\end{proof}
+\begin{prop}
+	If $T$ is sufficient for $X$, the NP test is a function of $T$.
+\end{prop} 
+
+\begin{exap} 	$X \sim \mathrm{Poisson}(\lambda)$, $H_0: \lambda = \lambda_0 = 1$ vs $H_1: \lambda = \lambda_1 =2$. 
+	
+	\begin{itemize}
+		\item Compute the CDF of $\frac{f_1}{f_0}$:
+		
+		Since $\frac{f_1(x)}{f_0(x)} = \frac{ e^{-\lambda_1}\frac{\lambda_1^x}{x!} }{ e^{-\lambda_0} \frac{\lambda_0^x}{x!} } = e^{\lambda_0 - \lambda_1} (\frac{\lambda_1}{\lambda_0})^x = \frac{2^x}{e},$
+		$$\PP_{\lambda_0} ( \frac{f_1(X)}{f_0(X)} \leq k ) = \PP_{\lambda_0} ( \frac{2^X}{e} \leq k) = \PP_{\lambda_0} (X \leq \frac{\ln k + 1}{\ln 2}).$$
+		
+		
+		\item Compute $k$ and $\gamma$:
+		
+		The formula (2) becomes:
+		$$\PP_{\lambda_0} (X \leq \frac{\ln k + 1}{\ln 2}) - \gamma \PP_{\lambda_0}( \frac{2^X}{e} = k ) = 1 -\alpha.$$
+		
+		If $\alpha = 0.05$, $F^{-1}_{\lambda_0}(1 - \alpha) = 3$, so we set $k = \frac{8}{e}$, 
+		$$\gamma = \frac{0.981 - 0.95}{0.061} = 0.5$$
+		and thus the NP test is 
+		\begin{align*}
+		\varphi(x) = \begin{cases}
+		1 &\quad x>3 \\
+		0.5 &\quad x=3 \\
+		0 &\quad x<3 \\
+		\end{cases}.
+		\end{align*}
+		
+	\end{itemize} 
+	
+	The test statistic is $X$ itself, while the p-value is $\PP_\lambda(X > x_0)$, where $x_0$ is the observed value (since $\lambda_1 > \lambda_0$).
+\end{exap}
+
+\subsection{Monotone likelihood ratio (MLR) property}
+\begin{mydef}
+	Let $\FF_\Theta$ be a family of pdfs/pmfs, where $\Theta \subset \RR$ is an interval. We say $\FF_\Theta$ has \uline{the monotone likelihood ratio (MLR) property} in $T(X)$ if, for $\theta_1, \theta_2 \in \Theta$, $\theta_1 < \theta_2$, $\frac{f_{\theta_2} (x)}{f_{\theta_1} (x)}$ is an non-decreasing function of $T(X)$ on $\{ x: f_{\theta_1}(x) \neq 0 \text{ or } f_{\theta_2} (x) \neq 0 \}$. 
+\end{mydef}
+
+\begin{exap}
+	$X_i \SimIID U(0, \theta),\ \theta>0$. Let $\theta_1 < \theta_2$, so for $x \in \RR^n$ such that $x_{(n)} < \theta_2$,
+	\begin{align*}
+		\frac{f_{\theta_2}(x)}{f_{\theta_1} (x)} &= \frac{ (\frac{1}{\theta_2})^n \IndOne(x_{(n) < \theta_2 } )}{ (\frac{1}{\theta_1})^n \IndOne(x_{(n)} < \theta_1 )} \\
+				& = \frac{\theta_1^n}{\theta_2^n} \cdot \frac{1}{\IndOne(x_{(n)} < \theta_1)} \\
+				& = \begin{cases}
+				\frac{\theta_1^n}{\theta_2^n} & \quad \theta_{(1)} > x_{(n)} \\
+				\infty & \quad \theta_{(1)} \leq x_{(n)} < \theta_2
+				\end{cases}
+	\end{align*}
+	$\implies$ it has the MLR in $T(X) = X_{(n)}$.
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID N(0, \sigma^2),\ \sigma^2>0$. Let $\sigma^2_1 < \sigma^2_2$.
+	\begin{align*}
+		\frac{f_{\sigma_2}(x)}{f_{\sigma_1} (x)} = \frac{\sigma^n_1}{\sigma_2^n} + \frac{1}{2}( \frac{1}{\sigma_1^2} - \frac{1}{\sigma_2^2} ) \sum_{i=1}^n x_i^2;
+	\end{align*}
+	so it has the MLR property in $T(X) = \sum_{i=1}^n X_i^2$.
+\end{exap}
+
+%使用MLR property构造UMP test
+{\color{blue}
+\begin{thm}\textbf{ }
+	\begin{itemize}
+		\item
+		If $X \sim f_\theta$, where $\{ f_\theta: \theta \in \Theta \}$ has the MLR property in $T(X)$, then for $H_0: \theta \leq \theta_0$ vs $H_1: \theta > \theta_0$, any test of the form
+		\begin{align*}
+		\varphi(x) = \begin{cases}
+		1 &\quad T(x) > t_0 \\
+		\gamma &\quad T(x) = t_0 \\
+		0 &\quad T(x) < t_0
+		\end{cases}
+		\end{align*}
+		has $\beta_\varphi(\theta)$ non-decreasing and is UMP for size $\alpha = \EE_{\theta_0} (\varphi(X) )$ if this is non-zero.
+		
+		
+		\item Also, for any $\alpha \in (0,1),\ \exists t_0 \in \RR$ and $\gamma \in (0,1)$ s.t. the above test is UMP of size $\alpha$.
+		\end{itemize}
+		\end{thm}
+	} 
+
+\begin{exap}
+	$X_i \SimIID \mathrm{Gamma}(\alpha, 1),\ \alpha>0$. Find a UMP test for $H_0: \alpha\geq \alpha_0$ vs $H_1: \alpha< \alpha_0$. Note that 
+	$$f(x) = \frac{1}{ [\Gamma(\alpha)]^n \prod_{i=1}^n x_i }\exp \big \{   \alpha \sum_{i=1}{n}\log x_i - \sum_{i=1}^n x_i \big \}$$
+	has the MLR property in $T(x) = \sum_{i=1}^n \log(x_i)$. Therefore, applying the theorem, any test of the form 
+	\begin{align*}
+	\varphi(x) = \begin{cases}
+	1 &\quad T(x) < t_0 \\
+	0 &\quad T(x) \geq t_0
+	\end{cases}
+	\end{align*}
+	is UMP for its size $\alpha^\ast = \EE_{\alpha_0}( \varphi(X) )$.
+	
+	For a fixed $\alpha^\ast \in (0,1)$, let $F_0$ be the CDF of $T(X)$ under $\alpha_0$, and choose $t_0 = F^{-1}(\alpha^\ast)$, so that 
+	$$\EE_{\alpha_0}( \varphi(X) ) = \PP_{\alpha_0} (T(X) < t_0) = \alpha^\ast.$$ 
+\end{exap}
+ 
+\subsection{Unbiased tests}
+\begin{mydef}\textbf{ }
+	\begin{itemize}
+		\item A test $\varphi$ of $H_0: \theta \in \Theta_0$ against $H_1: \theta \in \Theta_1$ is said to be \uline{unbiased at size $\alpha$} if 
+		\begin{align*}
+		\beta_\varphi (\theta) \leq \alpha \quad \forall \theta \in \Theta_0\\
+		\beta_\varphi (\theta) \geq \alpha \quad \forall \theta \in \Theta_1
+		\end{align*}
+		
+		\item Let $U_\alpha$ be the class of all unbiased size $\alpha$ tests.
+		
+		\item If $\exists \varphi \in U_\alpha$ s.t. $\beta_\varphi (\theta) \geq \beta_{\varphi'}(\theta) \ \forall \varphi' \in U_\alpha,\ \forall \theta \in \Theta_1$, then $\varphi$ is called a \uline{UMP unbiased test.}
+	\end{itemize}
+\end{mydef}
+ 
+\begin{exap}
+	content...
+\end{exap}
+ 
+\begin{mydef}\textbf{ }
+	\begin{itemize}
+		\item A test $\varphi$ is said to be \uline{$\alpha$-similar on $\Theta^\ast \subset \Theta$} if 
+		$$\beta_\varphi(\theta) = \alpha \quad \forall \theta \in \Theta^\ast.$$
+		
+		\item Let $\Lambda = \bar{\Theta}_0 \cap \bar{\Theta}_1$.
+		
+		\item A test which is UMP over all tests that are $\alpha$-similar on $\Lambda$ is said to be a \uline{UMP $\alpha$-similar test}.
+	\end{itemize}
+\end{mydef}
+\begin{remark}
+	If $\beta_\varphi(\theta)$ is continuous in $\theta$ for all $\varphi$, then any unbiased size $\alpha$ test $\varphi$ is $\alpha$-similar on $\Lambda$.
+\end{remark}
+
+It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased test. The following theorem tells us tests that are UMP $\alpha$-similar on the boundary are often UMP unbiased.
+\begin{thm}
+	If $\beta_\varphi$ is continuous in $\theta$ for all $\varphi$. And $\varphi^\ast$ is UMP $\alpha$-similar test on $\Lambda$ with size $\alpha$, then $\varphi^\ast$ is a UMP unbiased test.
+\end{thm}
+\begin{proof}
+	content...
+\end{proof}
+
+\begin{exap}
+	content...
+\end{exap}
+
+\subsection{Exponential family: Part III}
+\begin{thm}
+	The $1$-parameter exponential family
+	$$f_\theta(x) = h(x) \exp\{ Q(\theta) T(x) - D(\theta) \} $$
+	has the MLR in $T$ if $Q$ is non-decreasion.
+\end{thm}
+\begin{remark}
+	Depending on the parametrization, $Q$ may be non-increasing. Take $Q'= -Q$ and $T' = - T$.
+\end{remark}
+\begin{exap}
+	$X_i \SimIID \mathrm{Poisson}(\lambda), \ \lambda>0$. The sufficient statistic is $T(X) = \sum_{i=1}^n X_i$, where $Q(\lambda) = \log(\lambda)$ is increasing.
+\end{exap}
+
+\begin{cor}
+	Let $\FF_\Theta$ be a $1$-par exponential family. There exists a UMP test of 
+	$$H_0: \theta \leq \theta_{00} \text{ or } \theta\geq \theta_{01} \text{ vs } H_1:\theta_{00}<\theta<\theta_{01}$$
+	of the form 
+	\begin{align*}
+	\varphi(x) = \begin{cases}
+	1 &\quad t_{00} <T(x) < t_{01} \\
+	\gamma_j &\quad T(x) = t_{0j} \\
+	0 &\quad T(x) < t_{00} \text{ or } T(x)> t_{01}
+	\end{cases}
+	\end{align*}
+	with $t_{0j}$ determined by $\EE_{\theta_{00}} ( \varphi(X) ) = \EE_{\theta_{01}} ( \varphi(X) ) = \alpha$.
+\end{cor}
+\begin{remark}
+	UMP tests for one-parameter exponential families don't exist for 
+	\begin{itemize}
+		\item $H_0: \theta=\theta_0$ vs $H_1: \theta \neq \theta_0$, or
+		\item $H_0: \theta_{00} \leq \theta \leq \theta_{01}$.
+	\end{itemize}
+\end{remark}
+
+\begin{thm}
+	Let $\FF_\Theta$ be a one-parameter exponential family, so that $\beta_\varphi$ is continuous in $\theta$ for all $\varphi$. Consider testing 
+	\begin{enumerate}
+		\item[a)] $H_0: \theta_{1} \leq \theta \leq \theta_{2}$ vs $\theta< \theta_1 \text{ or } \theta>\theta_2$
+		\item[b)] $H_0: \theta=\theta_0$ vs $H_1: \theta \neq \theta_0$.
+	\end{enumerate}
+	Then $$\varphi_a(x) = \begin{cases}
+	1 &\quad  T(x)<c_1 \text{ or } T(x) > c_2 \\
+	\gamma_i &\quad T(x) = c_i \\
+	0 &\quad \text{o.w.}
+	\end{cases}$$
+	where $c_i,\gamma_i$ are chosen s.t. $\EE_{\theta_1} \varphi_a(X) = \EE_{\theta_2} \varphi_a(X)  =\alpha$, is a UMP unbiased size $\alpha$ test, and 
+	$$\varphi_b(x) = \begin{cases}
+	1 &\quad  T(x)<d_1 \text{ or } T(x) > d_2 \\
+	\gamma_i &\quad T(x) = d_i \\
+	0 &\quad \text{o.w.}
+	\end{cases}$$
+	where $d_i,\gamma_i$ are chosen s.t. $\EE_{\theta_0} \varphi_b(X)=\alpha$ and $\EE_{\theta_0}(T(X) \varphi_b(X)) = \alpha \EE_{\theta_0}(T(X))$, is a UMP unbiased size $\alpha$ test.
+\end{thm}
+
+\begin{exap}
+	content...
+\end{exap}
+
+\subsection{Generalized likelihood ratio tests (GLRT)}
+\begin{mydef}
+	For testing $H_0: \theta\in \Theta_0$ vs $H_1: \theta \in \Theta_1$, we could use the likelihood ratio
+	$$r(x) = \frac{ \sup_{\theta \in \Theta_1} f_\theta(x) }{ \sup_{\theta \in \Theta_0} f_\theta(x) }$$
+	and reject $H_0$ if $r(x)$ is large.
+\end{mydef}
+
+\begin{mydef}
+	The \uline{generalized likelihood ratio} is
+	\begin{align*}
+		\lambda(x) = \frac{ \sup_{\theta \in \Theta_0} f_\theta(x) }{ \sup_{{\color{blue} \theta \in \Theta}} f_\theta(x) }
+	\end{align*}
+	and a test that rejects $H_0$ if $\lambda(x)<c$ is a \uline{generalized likelihood ratio test} (GLRT).
+\end{mydef}
+\begin{remark}
+	We choose $c$ such that $\sup_{\theta\in \Theta_0} \PP_\theta(\lambda(x)>c) =\alpha$.
+\end{remark}
+
+\begin{prop}\textbf{ }
+	\begin{enumerate}
+		\item[a)] $r(x)> k \iff \lambda(x)< c$ for some $c = c(k)$. 
+		
+		\item[b)] If $T$ is sufficient, then $\lambda$ can be writen as the function of $T$.
+	\end{enumerate}
+\end{prop}
+
+\begin{prop}\textbf{ }
+	\begin{enumerate}
+		\item[a)] The NP tests are GLRT's.
+		
+		\item[b)] MLR one-sided tests are GLRT's.
+	\end{enumerate}
+\end{prop}
+
+%有时候glrt是umpu
+\begin{exap}
+	$X_i \SimIID N(\mu,1)$. $H_0: \mu=0$ vs $H_1: \mu \neq 0$. Then
+	\begin{align*}
+		\varphi(x) = \begin{cases}
+		1 &\quad |\bar{x}|>\sqrt{n}z_{1-\alpha}  \\
+		0 &\quad \text{o.w.}
+		\end{cases}
+	\end{align*}
+	is UMPU. Now, compute the GLR,
+	\begin{align*}
+		\lambda(x) = \exp( -\frac{n}{2} \bar{x}^2 ) < c
+	\end{align*}
+	$\iff |\bar{x}|> c'$, so an $\alpha$-level GLRT is UMPU.
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID f_{\theta,a},\ f_{\theta,a} = \frac{1}{\theta} e^{-\frac{(x-a)}{\theta}} \IndOne(x \geq a)$. $H_0: \theta = 1$ vs $H_1: \theta\neq 1$.
+	
+	Compute the MLEs:
+	$$\hat{a} = X_{(1)},\quad \hat{\theta} = \frac{1}{n} \sum_{i=1}^n (X_i - X_{(1)}).$$
+	
+	Then the  GLR is
+	\begin{align*}
+		\lambda(x) = \frac{ \exp( -\sum_{i=1}^n (x_i - x_{(1)} )) }{ \frac{1}{\hat{\theta}^n} \sum_{i=1}^n (x_i - x_{(1)} ) } = \hat{\theta}^n \exp( -n(\hat{\theta} + 1 ) );
+	\end{align*}
+	and the GLRT rejects $H_0$ if and only if $\hat{\theta} < c_1$ or $\hat{\theta} > c_2$. Note that, under $H_0$, the distribution of $\hat{\theta}$ is independent of $a$.
+	{\color{red}to be checked}
+\end{exap}
+
+\begin{mydef}
+	A test function $\varphi$ is said to have asymptotic size $\alpha$ if 
+	$$\limsup_n \sup_{\theta \in \Theta_0} \beta_\varphi (\theta) \leq \alpha.$$
+\end{mydef}
+
+
+\begin{thm}[Wilk] \textbf{ }
+	\begin{itemize}
+		\item Under the regularity conditions, if $H_0:\theta=\theta_0$, $\hat{\theta}_n$ is the MLE for $\theta \in \Theta \subset \RR^k$, and $X_i \SimIID f_\theta$. Then 
+		$$ -2 \log \lambda(x) \xrightarrow{w} \chi^2_k.$$
+		\item 
+	\end{itemize}
+\end{thm}
+
+
+\begin{exap}
+	$X_i \SimIID N(\mu, \sigma^2)$.
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID N(\mu, \sigma^2)$.
+\end{exap}
+
+
+\subsection{Other large sample tests}
+\begin{mydef} Begin again with
+	$$H_0: \theta = \theta_0 \quad H_1: \theta \neq \theta_0.$$
+	\begin{itemize}
+		\item \textbf{Rao score test}
+			$$R_n = n \psi _n (\theta_0)^T I^{-1}(\theta_0) \psi_n (\theta_0)$$
+			where $\psi_n(\theta) = \frac{1}{n} \sum_{i=1}^n \psi(x_i; \theta)$.
+		\item \textbf{Wald test}
+			$$W_n = n(\hat{\theta}_n - \theta_0)^T I(\theta_0) (\hat{\theta}_n - \theta_0) $$
+			where $\hat{\theta}_n$ is the general MLE.
+	\end{itemize}
+\end{mydef}
+\begin{remark}
+	content...
+\end{remark}
+
+\begin{prop}
+	\begin{enumerate}[a)]
+		\item $R_n \xrightarrow{w} \chi^2_k$ as $n\to \infty$.
+		
+		\item $W_n \xrightarrow[H_0]{w} \chi^2_k$ as $n\to \infty$. 
+
+		\item $W_n = -2 \log \lambda(x) + o_p(1)$.
+	\end{enumerate}
+\end{prop}
+\begin{proof}
+	content...
+\end{proof}
+
+\begin{exap}
+	$X_i \SimIID \mathrm{Poisson}(\theta)$. $H_0: \theta = \theta_0$ vs $H_1: \theta \neq \theta_0.$ 
+	
+	\begin{itemize}
+		\item \textbf{GLRT}:
+		
+		\item \textbf{Score test}:
+		
+		\item \textbf{Wald test}:
+	\end{itemize}
+\end{exap}
+
+\begin{mydef}
+	Extension to composite nulls: 
+	$$H_0: \theta \in \Theta_0,$$
+	where $\Theta_0 = \{ \theta \in \Theta: \theta_j = \theta_{0,j},\ j=1,\dots,q \}$.
+\end{mydef}
+
+\subsection{Goodness-of-fit and Pearson's $\chi^2$-test}

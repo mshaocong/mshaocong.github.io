@@ -1,0 +1,48 @@
+\BOOKMARK [1][-]{section.1}{Point Estimation}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Consistency}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Sufficient statistics and minimal sufficient statistics}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Complete statistics}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Ancillary statistics}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Unbaised estimation}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Uniform minimal variance unbaised estimation \(UMVUE\)}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Lower bound for variance in unbiased estimation}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Exponential family: Part I}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.9}{Methods of moment}{section.1}% 10
+\BOOKMARK [1][-]{section.2}{Maximum likelihood}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Maximum likelihood estimators \(MLE\)}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.2}{Uniqueness and existence of MLEs}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.3}{Exponential family: Part II}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.4}{Invariance}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.5}{Asymptotic consistency and normality}{section.2}% 16
+\BOOKMARK [1][-]{section.3}{Hypothesis Testing}{}% 17
+\BOOKMARK [2][-]{subsection.3.1}{Introduction to hypothesis testing}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.2}{Neyman-Pearson theory}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.3}{Monotone likelihood ratio \(MLR\) property}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.4}{Unbiased tests}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.5}{Exponential family: Part III}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.6}{Generalized likelihood ratio tests \(GLRT\)}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.7}{Other large sample tests}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.8}{Goodness-of-fit and Pearson's 2-test}{section.3}% 25
+\BOOKMARK [1][-]{section.4}{Decision Theory and Bayes Methods}{}% 26
+\BOOKMARK [2][-]{subsection.4.1}{Basic Setting: Bayes methods}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.2}{Basic Setting: Decision theory}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.3}{Minimax rules}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.4}{Bayes rules}{section.4}% 30
+\BOOKMARK [2][-]{subsection.4.5}{Admissability}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.6}{Minimax rules: Revisited}{section.4}% 32
+\BOOKMARK [1][-]{section.5}{Confidence Estimation}{}% 33
+\BOOKMARK [2][-]{subsection.5.1}{Confident bounds and confident intervals}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.2}{Confident sets and uniformly most accuracy \(UMA\)}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.3}{Duality between confident sets and hypothesis tests}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.4}{Unbiased confident sets}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.5}{Pivots}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.6}{Shortest length confident intervals}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.7}{Bayes credible intervals}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.8}{Large sample confident intervals}{section.5}% 41
+\BOOKMARK [1][-]{appendix.A}{Appendix: Derivatives of matrices and vectors}{}% 42
+\BOOKMARK [1][-]{appendix.B}{Appendix: Distributions}{}% 43
+\BOOKMARK [2][-]{subsection.B.1}{List of distributions}{appendix.B}% 44
+\BOOKMARK [2][-]{subsection.B.2}{Related distributions}{appendix.B}% 45
+\BOOKMARK [2][-]{subsection.B.3}{Order statistics}{appendix.B}% 46
+\BOOKMARK [2][-]{subsection.B.4}{Conditional distributions}{appendix.B}% 47
+\BOOKMARK [1][-]{appendix.C}{Appendix: Exponential family}{}% 48

@@ -1,0 +1,120 @@
+\section{Decision Theory and Bayes Methods}
+
+\subsection{Basic Setting: Bayes methods}
+\begin{mydef} Let $X \sim f_\theta = f(\theta| x)$.
+	\begin{itemize}
+		\item 
+		A \uline{prior distribution $\pi$} is a probability distribution of $\Theta$.
+		
+		\item 
+		The \uline{posterior distribution for $\theta$} is 
+		$$\pi(\theta |x) = \frac{ f(\theta | x) \pi(\theta) }{ f(x) }$$
+		or $\pi(\theta | x) \propto f(\theta| x) \pi(\theta)$.
+		
+		\item 
+		Let $\FF_\Theta$ be a class of pdfs/pmfs. A family $\Pi$ of prior distributions on $\Theta$ is a \uline{conjugate family} for $\FF_\Theta$ if $$\pi(\theta|x) \in \Pi$$ for all $x$ and for all $\pi \in \Pi$.
+	\end{itemize}
+\end{mydef}
+
+\begin{exap}
+	$X_i \SimIID N(\mu,\sigma^2)$. $\sigma^2$ known. $\mu \sim N(\mu_0, \tau^2_0)$.
+	
+	Compute the posterior distribution:
+	\begin{align*}
+		\pi(\theta | x) &\propto f(\theta| x) \pi(\theta) \\
+		&= \exp\{ -\frac{1}{2\sigma^2} \sum^n_{i=1}(x_i -\mu)^2  \} \cdot \exp\{ -\frac{1}{2\tau_0^2} (\mu - \mu_0)^2 \}\\
+		&\propto \exp\{ -\frac{1}{2\sigma^2} [ n \mu^2 - n\bar{x}\mu ]  -\frac{1}{2\tau_0^2} [\mu^2 - 2\mu \mu_0] \} \\
+		&= \exp\{ -\frac{1}{2}( \frac{n}{\sigma^2}+ \frac{1}{\tau_0^2} ) \mu^2 + ( \frac{n\bar{x}}{\sigma^2} + \frac{\mu_0}{\tau^2_0} )\mu \} \\
+		&\propto \exp\{ -\frac{1}{2\tau^2_1} (\mu - \mu_1)^2 \}
+	\end{align*}
+	
+	$\implies \mu|X=x \sim N(\mu_1, \tau_1^2)$.
+\end{exap} 
+
+\begin{exap}
+	$X_i \SimIID \mathrm{Bin}(m,p)$. $m$ known. 
+	
+	$f(x|p) = \begin{pmatrix}
+	m \\
+	x
+	\end{pmatrix} \exp\{ x\log( \frac{p}{1-p} +n\log(1-p)) \}$.
+
+	...
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID N(\theta, \sigma^2)$. $\sigma^2$ known. $\pi(\theta)\propto 1$. So 
+	\begin{align*}
+		\pi(\theta|x) \propto f(\theta|x) & \propto \exp\{ \frac{1}{2\sigma^2} \sum_{i=1}^n(x_i - \theta)^2 \}\\
+		&\propto \exp\{ -\frac{n}{2\sigma^2}(\theta - \bar{x})^2 \}
+	\end{align*}
+	
+	$\implies \ \theta|X=x \sim N(\bar{x}, \sigma^2/n)$.
+\end{exap}
+
+\subsection{Basic Setting: Decision theory}
+\begin{mydef}\textbf{ }
+	\begin{itemize}
+		\item Model: $\FF_\Theta$ a space of distributions.
+		\item Action Space: $\mathcal{A}$ is the set of valid decisions one can make.
+		\item Loss Function: $l:\Theta\times \mathcal{A} \to \RR^+$ indicating the loss caused by taking action $a\in\mathcal{A}$ if $\theta\in \Theta$ is the true parameter value.
+		\item Decision Rule: $\delta: \underline{X}\to \mathcal{A}$ a statistic.
+	\end{itemize}
+\end{mydef}
+
+\begin{mydef}
+	Let $\mathcal{D}$ be the class of decision rules and $l$ be a specified loss function. The risk function of $\delta\in \mathcal{D}$ is 
+	$$R(\theta, \delta) = \EE_\theta \big( l(\theta, \delta(X)) \big).$$ 
+\end{mydef}
+
+\begin{exap}
+	Let $\mathcal{A} = \Theta$ (estimation).
+	
+	\begin{enumerate}[i)]
+		\item
+		
+		\item 
+	\end{enumerate}
+\end{exap}
+
+\subsection{Minimax rules}
+
+\subsection{Bayes rules}
+\begin{mydef}\textbf{ }
+	\begin{itemize}
+		\item 
+		For a given prior $\pi$ on $\Theta$, the Bayes' risk of $\delta \in \mathcal{D}$ is 
+		$$r(\pi, \delta) = \EE_\pi \Big( R(\theta, \delta(X)) \Big) =  \EE_\pi \Big( \EE \big( l(\theta, \delta(X)\mid \theta) \big) \Big).$$
+		
+		\item 
+		A Bayes' rule $\delta^\ast$ satisfies
+		$$r(\pi, \delta^\ast) = \inf_{\delta\in \mathcal{D}} r(\pi, \delta)$$
+		for some prior $\pi$.
+		
+		\item 
+		The posterior risk of decision $a$ given $X=x$ and a prior $\pi$ is  
+		$$r_\pi(a|x) = \EE \Big(  l(\theta,a) \big| X=x \Big).$$
+	\end{itemize}
+\end{mydef}
+
+{\color{blue}
+\begin{exap}
+	\begin{itemize}
+		\item Under squared-error loss, the Bayes rule for estimating $\theta$ is 
+		
+		\item Under absolute loss, the Bayes rule for estimating $\theta$ is 
+	\end{itemize}
+\end{exap}
+}
+
+\begin{exap}
+	$X_i|\theta \SimIID N(\theta, \sigma_0^2)$.
+\end{exap}
+
+\begin{exap}
+	$X_i|\theta \SimIID \mathrm{Poisson}(\theta)$.
+\end{exap}
+
+\subsection{Admissability}
+
+\subsection{Minimax rules: Revisited}

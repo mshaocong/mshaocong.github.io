@@ -1,0 +1,508 @@
+\section{Point Estimation}
+\begin{problem}
+	From the observed data, choose a plausible value for unknown $\theta$, or $\psi(\theta)$ for some known $\psi$.
+\end{problem}
+
+\begin{comment}
+\begin{tabular}{ c | l  }
+			  	\hline
+			  	\textbf{Notations} & \textbf{Descriptions} \\ 
+			  	\hline
+			  	$\mu$& $=\mathbb{E}(X)$\\
+			  	$\Sigma$& $=\mathrm{Var}(X)$\\
+			  	$\sigma_{YX}$& $=\mathbb{E}[Y(X-\mu)]$\\
+			  	%$s(z,x)$& $=1 + (z-\mu)^T \Sigma^{-1} (x - \mu)$\\
+			  	\hline 
+\end{tabular}
+
+\end{comment}
+\subsection{Consistency}
+\begin{mydef}
+	A sequence of estimators $T_n$ based on a sample $X_1,\dots,X_n$ is said to be \uline{consistent of $\psi(\theta)$} if
+	$$T_n \xrightarrow{\PP} \psi(\theta)$$
+	for each $\theta \in \Theta$.
+	
+	$T_n$ is called \uline{$a_n$-consistent} if $a_n (T_n - \psi(\theta)) = o_p(1)$. 
+\end{mydef}
+
+\begin{prop}
+	If $\EE T_n \to \psi(\theta)$ and $\Var T_n \to \psi(\theta)$, then $T_n$ is consistent for $\psi(\theta)$.
+\end{prop}
+
+\subsection{Sufficient statistics and minimal sufficient statistics}
+%{\color{blue}
+\begin{mydef}
+	Let $X_1,\dots,X_n \SimIID F_\theta, \ \theta\in \Theta$. A statistic $T(X_1, \dots, X_n)$ is \underline{sufficient for $\theta$} if the distribution of $X|T=t$ does not depend on $\theta$ for any $t$.
+\end{mydef}
+%}
+\begin{exap} 
+	Let $X_i \SimIID N(\theta,1)$. Let $U_{n \times n}$ be an orthogonal matrix s.t. the first row is $u_1 = \frac{1}{\sqrt{n}}(1, \dots, 1)$. If $Y = UX$, then 
+	$$Y_j \sim N( \sqrt{n}\theta u^T_j u_1, 1 ).$$ 
+	So $Y_1 = \sqrt{n} \bar{X}$ is sufficient; however, $Y_2,\dots, Y_n \SimIID N(0,1)$ contain no information about $\theta$! To prove this, we need to compute the distribution of 
+	$$(X_1, \dots, X_n)|\bar{X}=t.$$
+	
+	\textbf{To be added.}
+\end{exap}
+ 
+{\color{blue}
+\begin{thm} 
+	Let $X_1,\dots,X_n \SimIID f_\theta, \ \theta\in \Theta$. $T(X)$ is sufficient for $\theta$ if and only if there are non-negative functions $h$ and $g$ s.t.
+	$$f_\theta(x_1, \dots, x_n) = h(x_1, \dots, x_n) g(T(X); \theta).$$
+\end{thm}
+}
+\begin{remark}\textbf{ }
+	\begin{itemize}
+		\item \textbf{Invariance}. 
+		
+		\uwave{If $T$ is sufficient for $\theta$, and $f$ is one-to-one, then $f(T)$ is also sufficient.}
+	\end{itemize}
+\end{remark}
+
+\begin{exap} $X_1,\dots,X_n \SimIID U(\theta_1, \theta_2), \ \theta_2> \theta_1,\ \theta_j \in \RR$.
+	\begin{align*}
+		f_{\theta}(x_1, \dots, x_n) & = \prod_{i} \frac{ \IndOne(\theta_1 < x_i < \theta_2)}{\theta_2 - \theta_1} \\
+		& = (\theta_2 - \theta_1)^{-n} \cdot \IndOne(\theta_1 < x_{(1)}) \IndOne( x_{(n)} < \theta_2)
+	\end{align*}
+	$\implies \ T(X) = (X_{(1)}, X_{(n)} )$.
+\end{exap}
+
+\begin{exap} $X_1,\dots,X_n \SimIID U(-\theta, \theta), \ \theta>0$. (so $(X_{(1)}, X_{(n)} )$ is sufficient)
+	\begin{align*}
+	f_{\theta}(x_1, \dots, x_n) & = \prod_{i} \frac{ \IndOne(-\theta < x_i < \theta)}{2 \theta} \\
+	& = (2 \theta )^{-n} \cdot \IndOne( \max(-x_{(1)} , x_{(1)}) < \theta)
+	\end{align*}
+	$\implies \ T(X) = \max(-X_{(1)} , X_{(1)})$.
+\end{exap}
+
+\begin{mydef}
+	$T(X)$ is called \underline{minimal sufficient} if 
+	\begin{enumerate}
+		\item[a)] it is sufficient, and
+		\item[b)] If $S(X)$ is sufficient, $\exists w$ s.t. $T(X) = w\circ S(X)$
+	\end{enumerate}
+\end{mydef}
+{\color{blue}
+\begin{thm}
+	Let $A = \{  (x,y)\mid \exists k(x,y)\neq 0 \text{ s.t. } f_\theta (x) = k(x,y) f_\theta (y) \ \forall \theta\in \Theta \}$, and $T$ is sufficient. $T$ is minimal sufficient if 
+	$$(x,y) \in A \implies T(x) = T(y).$$
+\end{thm}}
+\begin{remark}
+	Usually, we can follow the recipe below to show the minimal sufficiency of $T$:
+	\begin{enumerate}
+		\item Show $T$ is sufficient.
+		\item Check $(x,y) \in A \implies T(x) = T(y)$;
+		\item or if $\{ x:f_\theta (x)\geq 0 \}$ doesn't depend on $\theta$, check $f_\theta(x)/f_\theta(y)$ indep. of $\theta \implies T(x)=T(y)$
+	\end{enumerate}
+\end{remark}
+
+\begin{exap} $X_1,\dots,X_n \SimIID U(\theta, -\theta), \ \theta>0$.  Notice that $f_\theta (x) = \theta^{-n} \IndOne(x_{(n) < \theta } )$. 
+	
+	$\implies \ T(X) = X_{(n)}$ is sufficient. 
+	
+	$\implies \ $Taking $(x,y) \in A$, we have, for some $k(x,y) \neq 0$, 
+	$$\theta^{-n} \IndOne(x_{(n) < \theta } ) =  k(x,y)  \theta^{-n} \IndOne(y_{(n) < \theta } ).$$
+	
+	$\implies \ T(x) = T(y)$. Thus, $T$ is minimal sufficient.
+\end{exap}
+
+\begin{exap} $X_1,\dots,X_n \SimIID N(\mu, 1)$. Obviously, $T = \sum X_i$ is sufficient.
+	
+	If we assume
+	$$\frac{f_\theta (x)}{f_\theta (y)} = \exp \Big( \frac{1}{2}[\sum y_i^2 - \sum x_i^2]  \Big) \exp \Big( \mu [T(x) - T(y)] \Big)$$
+	is indep. of $\mu$, we must have $T(x) = T(y)$. By Theorem 1.6, $T$ is minimal.
+	
+\end{exap}
+
+\subsection{Complete statistics}
+\begin{mydef}\textbf{ }
+	\begin{itemize}
+		\item Let $\FF = \{ f_\theta\mid \theta\in \Theta \}$ be a family of pmfs or pdfs. Then \underline{$\FF$ is complete} if 
+		$$\EE_\theta g(X) = 0 \ \forall \theta \implies \PP_\theta (g(X) = 0 ) = 1 \ \forall \theta.$$
+		
+		\item A statistic \underline{$T$ is called complete} if the induced family of distributions for $T$ is complete, i.e.
+		$$\EE_\theta g(T(X)) = 0 \ \forall \theta \implies \PP_\theta(g(T(X)) = 0) =1 \ \forall \theta.$$
+	\end{itemize}
+\end{mydef}
+
+\begin{exap}
+	$X_1, \dots, X_n \SimIID \Bin(1,p),\ 0<p<1$. Consider $T(X) = \sum^n_{i=1} X_i$. Then
+	\begin{align*}
+		\EE_p g(T) &= \sum^n_{t=0} \PP(T = t) \cdot g(t) \\
+		&=\sum^n_{t=0} g(t) \begin{pmatrix}
+		n \\
+		t
+		\end{pmatrix} p^t (1-p)^{n-t} \\ 
+		&=(1-p)^n \sum^n_{t=0} g(t) \begin{pmatrix}
+		n \\
+		t
+		\end{pmatrix} (\frac{p}{1-p})^t
+	\end{align*}
+	is a polynonial in $\frac{p}{1-p}$. Thus,
+	$$\EE_p g(T) = 0 \ \forall p \implies g(t) \begin{pmatrix}
+	n \\
+	t
+	\end{pmatrix} = 0 \ \forall t.$$
+	It means $g(t)=0$ for $t \in \{ 0,\dots, n \}$. $T$ is a complete statistic.	
+\end{exap}
+
+\begin{exap}[not complete]
+	$X \sim \Bin(n,p), \ p\in \{ 1/4, 3/4 \}$, is not a complete family.
+	
+	Construct $g$ s.t. the definition of compelteness is not satisfied.
+	$$g(X) = (X-\frac{n}{4})(X-\frac{3n}{4}) - \frac{3n}{16}.$$
+\end{exap}
+
+\subsection{Ancillary statistics}
+\begin{mydef}
+	A statistic $A$ is called \underline{ancillary} if its distribution doesn't depend on $\theta$.
+\end{mydef}
+\begin{remark}
+	Usually, we have two ways to prove something is ancillary: 
+	\begin{enumerate}
+		\item Compute its distribution directly. 
+		\item Check if $\PP_\theta(A(X)\in B )$ is a function of $\theta$.
+	\end{enumerate} 
+\end{remark}
+
+\begin{exap}
+	$X_i \SimIID N_(\mu, \sigma^2_0)$. $\sigma^2_0$ known. We know that $S^2 \sim \frac{\sigma^2_0}{n-1} \chi^2_{n-1}$. It doesn't depend on $\theta$.
+\end{exap}
+
+\begin{exap}
+	Let $f$ be a pdf, and for $\theta \in \RR$, set $f_\theta(x) = f(x-\theta)$ (location family). 
+	
+	If $X_i \SimIID f_\theta$, $X_i - \bar{X}$ are all ancillary for $\theta$. It is because $X_i - \bar{X}$ is location invariant. Let $S$ be location invariant; that is $$S(x) = S(x + c),$$
+	then we have
+	$$\PP_\theta ( S(\underline{X}) \in B ) = \PP_\theta ( S(\underline{X} - \theta) \in B ).$$
+	
+	Notice that $\underline{X} - \theta$ doesn't depend on $\theta$.
+\end{exap} 
+
+\begin{exap}
+	Let $f$ be a pdf, and for $\theta \in \RR$, set $f_\theta(x) = \frac{1}{\theta}f(\frac{x}{\theta})$, $\theta>0$ (location-scale family). 
+	
+	If $X_i \SimIID \theta$, then $\frac{\bar{X}}{S}$ is ancillary for $\theta$. It is because this statistic is location-scale invariant! So we don't need to compute its distribution.
+\end{exap}
+
+{\color{blue}\begin{thm}[Basu]
+		If $S$ is complete and sufficient, $S$ is independent of any ancillary statistics.
+		\end{thm}
+		}
+\begin{proof}
+	Let $A$ be ancillary and $Y = \EE_\theta ( \IndOne(A \leq a) | S )$. To show that $A$ is independent of $S$, it suffices to show 
+	$$Y = \EE_\theta(\IndOne(A \leq a) ).$$
+	
+	Clearly, $\EE_\theta Y = \PP(A \leq a)$. So $\EE_\theta (Y - \PP(A \leq a)) = 0$ holds for all $\theta$.
+	
+	By completeness, $Y = \PP(A \leq a)$ almost surely; that is $A$ and $S$ are independent.
+\end{proof}
+
+\subsection{Unbaised estimation}
+\begin{mydef}
+	Let $\FF_\theta$ be a family of distributions, and $\varphi$ be a function of $\theta$. 
+	\begin{itemize}
+		\item A statisticc $T$ is \underline{unbiased for $\theta$} if 
+		$$\EE_\theta T = \varphi(\theta ), \ \forall \theta \in \Theta.$$
+		
+		\item Any function $\varphi$ is called \underline{estimable} if there always exists an unbiased estimator.
+	\end{itemize} 
+\end{mydef}
+\begin{remark}\textbf{ }
+	\begin{itemize}
+		\item Unbiased estimates may not exist.
+		\item \uwave{If $T$ is unbiased for $\theta$, $g(T)$ may not be so for $g(\theta)$.}
+		\item Usually, we take $\varphi = \boldsymbol{\mathrm{Id}}_\Theta$. 
+	\end{itemize}
+\end{remark}
+
+\subsection{Uniform minimal variance unbaised estimation (UMVUE)}
+\begin{mydef}
+	Let $\mathcal{U}$ be the set of all unbaised estimators of $\varphi(\theta)$ that have finite variance. $T \in \mathcal{U}$ is called \underline{uniformly minimum variance unbiaed estimator (UMVUE) of $\theta$} if
+	$$\Var_\theta T \leq \Var_\theta S, \quad \forall S\in \mathcal{U},\ \forall \theta \in \Theta.$$
+\end{mydef}
+\begin{remark} 
+	\textbf{Invariance}.
+	\begin{itemize}
+		\item \uwave{If $T_i$ is the UMVUE for $\psi_i$, then $\sum_{i=1}^{n} \lambda_i T_i$ is the UMVUE for $\sum_{i=1}^n \lambda_i \psi_i$.}
+		\item Let $T_n$ be a sequence of UMVUEs. If $T_n \xrightarrow{L^2} T$, then $T$ is also a UMVUE. 
+	\end{itemize}
+	
+\end{remark}
+
+\begin{thm}
+	Let $\mathcal{U}_0 = \{ v: \EE_\theta(v) = 0 \text{ and } \Var_\theta (v) < \infty \}$. Then $T \in \mathcal{U}$ is the UMVUE of $\varphi(\theta)$ if and only if $\EE(Tv) = 0$ for all $\theta$ and for all $v \in \mathcal{U}_0$.
+\end{thm}
+
+
+\begin{thm}[Rao-Blackwell]
+	Let $\FF_\theta$ be a paremetric family of distributions, and $h\in \mathcal{U}$ an unbiaed estimator of $\psi(\theta)$. If $T$ is sufficient for $\theta$, then $\EE(h|T) \in \mathcal{U}$ and
+	$$ \Var_\theta \Big( \EE(h|T) \Big) \leq \Var_\theta (h),\quad \forall \theta \in \Theta$$
+	with equality if and only if $h$ is a function of $T$.
+\end{thm}
+
+{\color{blue}
+\begin{thm}[Lehmann-Scheff\'e]
+	Suppose $T$ is complete and sufficient. If there exists $h$ s.t. 
+	$$\EE_\theta (h) = \psi (\theta) \text{ and } \Var_\theta (h) < \infty, $$
+	then $\EE_\theta(h | T)$ is the UMVUE for $\psi$.
+\end{thm}
+}
+\begin{remark}
+	\begin{itemize} \textbf{ }
+		\item In Rao-Blackwell, we only require the sufficiency of $T$; however, in Lehmann-Scheff\'e, we require both of the completeness and sufficiency of $T$. 
+		\item By LS, we can follow this recipe to find the UMVUE:
+		\begin{enumerate}
+			\item Find a complete sufficient statistic $T$ and a unbiased estimate $h$.
+			\item Compute $\EE_\theta(h | T)$.
+		\end{enumerate}
+	\end{itemize} 
+\end{remark}
+
+ \begin{exap}
+	$X_i \SimIID \mathrm{Poisson}(\lambda)$.  Obviously, $\bar{X}$ is complete and sufficient for $\lambda \in (0,\infty)$.
+	
+	\begin{itemize}
+		\item Since $X_i \in \mathcal{U}$, and $T = \bar{X}$ is complete and sufficient, by LS, 
+		$$\EE(X_i | \bar{X}) = \bar{X}$$
+		is the UMVUE for $\lambda$. (Recall that $X_i| \sum_{j=1}^n X_j \sim \mathrm{Bin}(n\bar{X}, \frac{1}{n})$.)
+		
+		\item Or we can directly choose $h = \bar{X}$. Notice that $\EE_\lambda (\bar{X}) = \lambda$, so $\bar{X}$ is the UMVUE for $\lambda$.
+	\end{itemize}  
+	
+	
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID \mathrm{Exp}(\lambda)$. Find the UMVUE of $\psi(\lambda) = \PP_\lambda(X_1 \leq 1)$. A complete sufficient statistic is $T = \sum_{i=1}^n X_i$. And let 
+	$$h(\underline{X}) = \IndOne(X_j \leq 1)$$
+	be a unbiased estimator for $\psi(\lambda)$. Therefore, the UMVUE of $\psi(\lambda)$ is 
+	\begin{align*}
+		\EE(h(X)| T) & = \PP( X_j \leq 2 | \sum_{i=1}^n X_i =t ) \\
+		&= \PP( \frac{X_j}{ \sum_{i=1}^n X_i } \leq \frac{2}{t} | \sum_{i=1}^n X_i =t ) \\
+		&= \PP( \frac{X_j}{ \sum_{i=1}^n X_i } \leq \frac{2}{t}) \\
+		&= \PP( Z \leq \frac{2}{t} )
+	\end{align*}
+	where $Z \sim \mathrm{Beta}(1, n-1)$. Finally, we get the UMVUE of $\psi(\lambda)$:
+	$$\EE(h(X)| T) = \begin{cases}
+	1 &\quad T\leq 1; \\
+	1 - (1 - \frac{1}{T})^{n-1} &\quad T>1.
+	\end{cases}$$ 
+\end{exap}
+
+\begin{prop}
+	If $T$ is complete and sufficient, and $\EE_\theta (T^2)$ is finite for all $\theta$, then $T$ is minimal sufficient.
+\end{prop}
+\begin{proof}
+	By LS, $T$ is UMVUE for $\EE_\theta (T)$. Let $S$ be any sufficient statistic, and define 
+	$$h(S) = \EE_\theta (T|S).$$
+	Obviously, it is unbiased for $\EE_\theta (T)$ and satisfies
+	$$\Var_\theta (h(S)) \leq \Var _\theta (T)$$
+	by Rao-Blackwell. However, as $T$ is the UMVUE, by the uniqueness, $h(S) = T$ almost surely; i.e. $T$ is a function of $S$. By the definiton, $T$ is minimal sufficient. 
+\end{proof}
+
+\subsection{Lower bound for variance in unbiased estimation}
+\begin{mydef}Let $\FF_\Theta$ be a parametric familiy of distributions for a RV $X$.
+	\begin{itemize}
+		\item \underline{The score function} is defined as 
+		$$\frac{\partial}{\partial \theta} \log f_\theta (x).$$
+		\item \underline{The Fisher information} is defined as the variance of the score function:
+		$$I(\theta) = \Var_\theta \Big( \frac{\partial}{\partial \theta} \log f_\theta (x) \Big).$$
+	\end{itemize}
+\end{mydef}
+\begin{remark}
+	If $X_i \SimIID f_\theta$, let $I_n(\theta)$ denote the FI for $\prod f_\theta (x)$. 
+\end{remark}
+
+\begin{prop}[Properties of Fisher information]
+	Under regularity conditions, we have:
+	\begin{itemize}
+		\item $I(\theta) = \EE_\theta \Big(  (\frac{\partial}{\partial \theta} \log f_\theta (x))^2 \Big) = - \EE_\theta \Big( \frac{\partial^2}{\partial \theta^2} \log f_\theta (x) \Big)$;
+		\item $I_n(\theta) = n I_1 (\theta)$.
+	\end{itemize}
+	\end{prop}
+
+\begin{thm}
+	If $\Theta \subset \RR$ is an open interval and
+	\begin{enumerate}[(i)]
+		\item $s = \{ x: f_\theta(x)>0 \}$ is indep. of $\theta$
+		\item The score exists and is finite for all $x \in s,\ \theta \in \Theta$.
+		\item $\exists \ \EE_\theta (h(x))$ for all $\theta$ implies:
+		$$\int h(X) \frac{\partial}{\partial \theta} f_\theta (x) \ \dd x = \frac{\partial}{\partial \theta} \int h(x) f_\theta (x) \ \dd x.$$
+	\end{enumerate}
+	then if $T$ is an unbiased estimator of $\varphi(\theta)$, and $0< I(t) < \infty$,
+	$$\Var_\theta (T) \geq \frac{ [\varphi'(\theta)]^2 } { I(\theta)}.$$
+\end{thm}
+\begin{remark}\textbf{ }
+	\begin{itemize}
+		\begin{comment} 这些是感觉考试用不太到的东西
+		\item $$\frac{ [\psi'(\theta)]^2 }{n I_1(\theta)} \to 0.$$
+		\item If $\psi(\theta) = \theta$, we have
+		$$\Var_\theta(T) \geq I^{-1}(\theta);$$
+		it can be explained as: more information $\iff$ less variance. 
+		\end{comment}
+		\item The lower bound is attained if and only if $T(\underline{X})$ and $\frac{\partial}{\partial \theta} \log f(\underline{X})$ are perfectly correlated, that is,
+		$$T(X) - \psi(\theta) = k(\theta) \frac{\partial}{\partial \theta} \log f(\underline{X})$$
+		for some function $k(\theta)$.
+		
+		\item If $\theta \in \RR^k$, 
+		$$\Var_\theta (T(X)) \geq \psi'(\theta)^T I(\theta)^{-1} \psi(\theta).$$
+		
+		\item Suppose $\eta = \eta(\theta)$ is strictly monotonic, then
+		$$I(\eta) = \Var ( \frac{\partial}{\partial \eta} \log f_\eta(X) ) = \Var ( \frac{\partial}{\partial \theta} \cdot \frac{\partial \theta}{\partial \eta}\cdot \log f_\theta(X) ) = I(\theta) \cdot (\frac{\dd \theta}{\dd \eta})^2.$$
+		and letting $\tilde{\psi}(\eta) = \psi(\theta)$,
+		$$\frac{ [\frac{\dd}{\dd \theta} \psi(\theta)]^2 }{ I(\theta) } = \frac{ [ \frac{\dd}{\dd \eta} \frac{\dd \eta}{\dd \theta} \psi(\theta) ]^2 }{ I(\eta)/ (\frac{\dd \theta}{\dd \eta})^2 } = \frac{ [\frac{\dd}{\dd \eta} \tilde{\psi}(\eta)]^2 }{ I(\eta) }.$$
+		
+		\item 
+		Note: Scale families with bouded support and $U(0,\theta)$ don't satisfy the conditions.
+		
+		\item 
+		\uwave{If a unbiased estimator attains the lower bound of variance, then it is UMVUE!}
+	\end{itemize}
+\end{remark}
+
+\begin{exap}
+	$X_i \SimIID \mathrm{Exp}(\lambda)$. Then
+	$$f_\lambda (x) = \frac{1}{\lambda^n} e^{-T(x)/\lambda} \IndOne(X_{(1)} > 0).$$
+	 
+	\begin{itemize}
+		\item \textbf{Compute the Fisher information for $\lambda$}
+		
+		$\implies\ T(X) = \sum_{i=1}^n X_i,\ \frac{\partial}{\partial \lambda} \log f_\lambda(x) = T(X)/\lambda^2 - n =n\bar{X}/\lambda^2 - n.$
+		
+		$\implies \ I(\lambda) = \Var_\lambda( T(X)/\lambda^2 ) = \frac{1}{\lambda^4} n \lambda^2 = \frac{n}{\lambda^2}.$
+	
+		\item \textbf{Lower bound for variance of $\lambda$}
+			
+		$\implies$ If $S(X)$ is unbiased for $\lambda$, $\Var S(X) \geq \frac{1}{I(\lambda)} = \frac{\lambda^2}{n} = \Var_\lambda (\bar{X})$.
+		
+		\item \textbf{Lower bound for variance of $\psi(\lambda) = \PP_\lambda (X_1 \leq 1)$}
+		
+		For $\psi(\lambda) = \PP_\lambda (X_1 \leq 1)$, $\psi'(\lambda) = -e^{-1/\lambda}/\lambda^2$
+		
+		$\implies$ If $S(X)$ is unbiased for $\psi(\lambda)$, $\Var S(X) \geq \frac{[\psi'(\lambda)]^2}{I(\lambda)} = e^{-2/\lambda}/  n\lambda^2 .$
+	\end{itemize} 
+\end{exap}
+ 
+
+\begin{thm}
+	Assume $\theta \mapsto f_\theta$ is injective, and $T$ is unbiased for $\psi(\theta)$, and $\EE_\theta (T(X)) < \infty$. Let $\theta \in \Theta$ and 
+	$$S_\theta = \Big \{ \varphi \in \Theta: \{ x: f_\varphi (x) > 0 \} \subset \{ x: f_\theta (x) > 0 \}  \Big \}  \backslash  \Big \{ \theta \Big \}.$$
+	Then 
+	$$ \Var_\theta (T(X)) \geq \sup_{\varphi \in S_\theta} \frac{  [\psi(\varphi) - \psi(\theta) ]^2 }{ \Var_\theta (\frac{ f_\varphi(x) }{  f_\theta (x)})   }.$$
+\end{thm}
+
+\begin{exap}
+	$X \sim U(0,\theta)$. Then $S_\theta = (0,\theta)$. And $2X$ is the UMVUE for $\theta$ with the variance
+	$$\Var (2X) = 4 \Var X = \frac{\theta^2}{3}.$$
+	 
+	Notice that $\frac{f_\varphi}{f_\theta} = (\frac{\theta}{\varphi}) \cdot \IndOne(0, \varphi)$ for $\varphi \in S_\theta = (0,\theta)$. Then
+	\begin{align*}
+		\sup_{0 < \varphi < \theta} \frac{ [\varphi - \theta]^2 }{ \Var_{\theta} [ (\frac{\theta}{\varphi}) \cdot \IndOne(0, \varphi) ] } &= \sup_{0 < \varphi < \theta} \frac{ (\varphi - \theta)^2 }{ \frac{\theta^2}{\varphi^2} \cdot \frac{\varphi}{\theta} \cdot (1 - \frac{\varphi}{\theta}) } \\
+		&= \sup_{0<\varphi < \theta } \frac{ (\varphi - \theta)^2 }{\frac{\theta}{\varphi} - 1} \\
+		& = \frac{\theta^2}{4}
+	\end{align*}
+	
+	Although $2X$ is the UMVUE, $\Var(2X) > \frac{\theta^2}{4}$.
+\end{exap}
+
+\begin{comment}
+\begin{mydef}
+	efficient, asymptotically efficient
+\end{mydef}
+\end{comment}
+
+\subsection{Exponential family: Part I}
+\begin{mydef}
+	Let $\{f_\theta\}$ be a family of PDFs with 
+	$$f_\theta(x) = h(x)\exp\Big \{  \sum_{j=1}^{k} Q_i(\theta)T_j(x) + D(\theta)  \Big \}.$$
+\end{mydef}
+\begin{comment}
+\begin{remark}
+	content...
+\end{remark}
+
+\begin{exap}
+	content...
+\end{exap}
+
+\end{comment}
+{\color{blue}
+\begin{thm}[Sufficient and complete statistics]
+	Let $\FF_\theta = \{ f_\theta: \theta \in \Theta \}$ be a k-parameter exponential family on $\RR^n$, where $\Theta \subset \RR^k$ is an interval and $k\leq n$. Then
+	\begin{enumerate}[a)]
+		\item $T$ is sufficient.
+		\item If the range of $(Q_1, \dots, Q_k)$ contains an open set in $\RR^k$, $T$ is complete.
+	\end{enumerate} 
+\end{thm}
+}
+The theorem above gives a simple way to find sufficient statistics (see the example below); however, $T$ may not be complete in general. 
+\begin{exap} 
+	$X_i \SimIID N(\mu, \sigma^2)$, $\mu \in \RR$, $\sigma^2 > 0$.
+	
+	We re-write its pdf as the form of exponential family:
+	\begin{align*}
+		f_{\mu,\sigma^2} (x) &= (2\pi)^{-n/2} \exp \Big \{  - \frac{1}{2\sigma^2} \sum_{i=1}^n (x_i - \mu)^2 - \frac{n}{2} \log( \sigma^2) \Big \} \\
+		&= (2\pi)^{-n/2} \exp \Big \{  - \frac{1}{2\sigma^2} \sum_{i=1}^n x_i^2 + \frac{\mu}{\sigma^2} \sum_{i=1}^n x_i - \frac{n\mu^2}{2\sigma^2} - \frac{n}{2} \log( \sigma^2) \Big \}
+	\end{align*}
+	
+	Thus, $T_1(X) = \sum_{i=1}^n X_i$, $T_2(X) = \sum_{i=1}^n X_i^2$, and $(T_1, T_2)$ is sufficient.
+	
+	Moreover, we are interested in its completeness. Notice that $Q_i(\mu,\sigma^2) = \frac{\mu}{\sigma^2}$ and $Q_2(\mu,\sigma^2) = -\frac{1}{2\sigma^2}$. The range of $Q = (Q_1, Q_2)$ is $\RR \times \RR^-$, and it contains an open set in $\RR^2$. So $T$ is complete.  
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID N(\theta, \theta^2),\ \theta>0$.
+	
+	Obviously, $(T_1, T_2)$ is still sufficient for $\theta$, since 
+	$$f_\theta (x) = (2\pi)^{-n/2} \exp \Big \{  \frac{1}{\theta} T_1(x)  - \frac{1}{2\theta^2} T_2(x) + D(\theta) \Big \} .$$
+	
+	However, $T$ is not complete. 
+	
+	Notice that $T_1 \sim N(n\theta, n \theta^2) \implies\ \EE_\theta T^2_1(X) = n(n+1) \theta^2$. Similarly, $\EE_\theta T_2(X) = 2n \theta^2$. So
+	$$\EE_\theta \Big(2 T_1^2(X) - (n+1)T_2 (X) \Big)= 0, \forall \theta.$$
+	
+	Thus, we can construct $g: (t_1, t_2) \mapsto 2t_1^2 - (n+1)t_2$ that is not identically $0$ on $\RR \times \RR^+$. 
+\end{exap}
+
+
+
+\subsection{Methods of moment}
+\begin{mydef}
+	The method of moments estimator of $\theta = h(m_1, \dots, m_k)$ is 
+	$$T_h = h(\hat{m}_1, \dots, \hat{m}_k)$$
+	where $\hat{m}_k = \frac{1}{n}\sum_{i=1}^n X_i^k$.
+\end{mydef}
+\begin{remark}
+	Note: $m_n := \EE X^n$. And $m_{n_1,\dots,n_k}:= \EE X_1^{n_1} \dots X_k^{n_k}$.
+\end{remark}
+
+\begin{exap}
+	$X_i \SimIID \Bin(m,p)$. $h(p) = \PP_p(X_1 = 2) = \begin{pmatrix}
+	m\\
+	2
+	\end{pmatrix} \frac{(mp)^2}{m^2} (1-\frac{mp}{m})^{m-2}$. 
+	
+	The method of moments estimator is 
+	$$T_h(X) = \begin{pmatrix}
+	m\\
+	2
+	\end{pmatrix} \frac{(\bar{X}^2)^2}{m^2} (1-\frac{\bar{X}}{m})^{m-2}.$$
+\end{exap}
+
+\begin{exap}
+	$X_i \SimIID N(\mu, \sigma^2)$. $h(\mu, \sigma^2) = \begin{pmatrix}
+	\mu \\
+	\sigma^2
+	\end{pmatrix} = \begin{pmatrix}
+	\mu \\
+	\EE(X^2) - \mu^2
+	\end{pmatrix} $.
+	
+	The method of moments estimator is $$T_h(X) = \begin{pmatrix}
+	\bar{X} \\
+	\frac{1}{n}\sum X_i^2 - \bar{X}^2
+	\end{pmatrix} = \begin{pmatrix}
+	\bar{X} \\
+	\frac{n-1}{n} S^2
+	\end{pmatrix} .$$
+\end{exap}

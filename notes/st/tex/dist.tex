@@ -1,0 +1,172 @@
+\appendix
+\section{Appendix: Derivatives of matrices and vectors} 
+\begin{prop}
+	\begin{align*}
+		\frac{\partial a^T x}{ \partial x } &= a & \frac{\partial x^T a}{ \partial x } &= a\\
+		\frac{\partial a^T X b}{ \partial X } &= ab^T & \frac{\partial a^T X^T b}{ \partial X } &= ba^T \\
+		\frac{\partial x^T B x}{ \partial x } &= (B + B^T)x  & \frac{\partial b^T X^T D X c}{ \partial X } &= D^T X bc^T + DXcb^T \\
+	\end{align*}
+\end{prop}
+
+\section{Appendix: Distributions} 
+\subsection{List of distributions}
+\subsubsection{List of Continuous Distributions}
+\bgroup
+\def\arraystretch{2.0}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ c | c | c | c | c | c }
+		\hline 
+		\textbf{Distribution} & \textbf{PDF} & \textbf{Mean} &\textbf{Variance} & \textbf{CDF} & \textbf{CF} \\
+		\hline
+		$\mathrm{Exp}(\lambda)$ & $\lambda e^{-\lambda}x \cdot \IndOne[0,\infty)$ & $\lambda^{-1}$ & $\lambda^{-2}$ & $1-e^{- \lambda x}$ & $\frac{\lambda}{\lambda - it}$  \\
+		%\hline
+		$N(\mu, \sigma^2)$ &  $\frac{1}{\sqrt{ 2\pi \sigma^2 }} e^{ - \frac{ (x-\mu)^2 }{ 2 \sigma^2}} $ & $\mu$ & $\sigma^2$ & - & $e^{i\mu t - \frac{ \sigma^2 t }{ 2}}$ \\
+		%\hline
+		$N(0, 1)$ & $\frac{1}{\sqrt{ 2\pi  }} e^{ - \frac{ x^2 }{ 2}} $ & $0$ & $1$ & $\Phi$ & $e^{-\frac{t^2}{2}}$ \\ 
+		%\hline
+		$U[a,b]$ & $\frac{1}{b-a}\cdot \IndOne[a,b] $ & $\frac{a+b}{2}$ & $\frac{(b-a)^2}{12}$ & $\frac{x-a}{b-a}\IndOne[a,b]+\IndOne(b,\infty)$ & $\frac{e^{itb} - e^{ita}}{it(b-a)}$  \\
+		%\hline
+		$U[0,1]$ & $\IndOne[0,1]$ & $\frac{1}{2}$ & $\frac{1}{2}$ & $x\IndOne[0,1] + \IndOne(1,\infty)$ & $\frac{e^{it} - 1}{it}$ \\
+		%\hline
+		$\mathrm{Gamma}(\alpha, \beta)$ & $\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x} \IndOne(x > 0)$  & $\frac{\alpha}{\beta}$ & $\frac{\alpha}{\beta^2}$ & - & $(1 - \frac{it}{\beta})^{-\alpha}$ \\
+		%\hline 
+		$\chi^2(k) $ &  $\frac{1}{2^{k/2} \Gamma(k/2)} x^{k/2 - 1} e^{-x/2} \IndOne(x>0)$ & $k$ & $2k$ & - & $(1- 2it)^{-k/2}$  \\ 
+		$\mathrm{Beta}(\alpha,\beta)$  & $\frac{1}{\mathrm{B}(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta-1} \IndOne[0,1] $ & $\frac{\alpha}{\alpha+\beta}$ & $\frac{\alpha \beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$ & - & - \\  
+		Cauchy & $\frac{1}{\pi (1 + x^2)}$ & - &  - & $\frac{1}{\pi}\arctan(x) + \frac{1}{2}$ & $e^{-|t|}$ \\
+		\hline
+	\end{tabular}
+	\caption{\textbf{List of Continuous Distributions}}
+	\label{tab:ContinuousDist}
+\end{table}
+
+\subsubsection{List of Discrete Distributions}
+\begin{table}[h]
+	\centering
+\begin{tabular}{ c | c | c | c | c | c}
+	\hline
+	\textbf{Distribution}  & \textbf{PMF} & \textbf{Mean} &\textbf{Variance}& \textbf{CDF} & \textbf{CF}\\  
+	$\mathrm{Poisson}(\lambda)$ & $\PP(X=k)= \frac{\lambda^k e^{-\lambda}}{k!} \quad k\in \NN_0$  & $\lambda$ & $\lambda$ & - & $\exp( \lambda( e^{it} -1 ) )$\\
+	$\mathrm{Bin}(n,p)$ & $\PP(X=k) = \binom{n}{k} p^k (1-p)^{n-k}  \quad k=0,1,\dots,n$  & $np$ & $np(1-p)$ & - & $( 1 - p + pe^{it} )^n$ \\
+	$\mathrm{Bin}(1,p)$ & $\PP(X=0) = 1-p,\ \PP(X=1) = p$ & $p$ & $p(1-p)$ & - & $1-p + pe^{it}$ \\
+	$\mathrm{MultiNomial}$ & & & & & \\
+	$\mathrm{Geometric}$ & & & & & \\
+	$\mathrm{NegativeBin}$ & & & & & \\
+	$\mathrm{HypGeometric}$ & & & & & \\
+	\hline 
+\end{tabular}
+	\caption{\textbf{List of Discrete Distributions}}
+	\label{tab:DiscreteDist}
+\end{table}
+
+\newpage
+\subsection{Related distributions}
+\subsubsection{Gamma function and Beta function}
+\begin{prop}
+	$$\Gamma(z) = \int^\infty_0 x^{z-1} e^{-x} \ \dd x.$$
+	\begin{enumerate}[a)]
+		\item $\Gamma(\frac{1}{2}) = \sqrt{\pi}$
+		\item $\Gamma(1) = 1$
+		\item $\Gamma(z + 1) = z \Gamma(z)$
+		\item $\Gamma(n) = (n-1)!$
+	\end{enumerate}
+\end{prop}
+
+\begin{prop}
+	$$B(x,y) = \int^1_0 t^{x-1} (1-t)^{y-1} \ \dd t$$
+	\begin{enumerate}[a)]
+		\item $B(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y) }$
+		\item $B(n,m) = \frac{ (n-1)!(m-1)! }{ (x+y-1)! }$
+		\item $\binom{n}{k} = \frac{n!}{k! (n-k)!} = \frac{1}{ (n+1) B(n-k+1, k+1) }$
+	\end{enumerate}
+\end{prop}
+
+\subsubsection{Gamma distribution and Beta distribution}
+\begin{prop}\textbf{ } 
+	\begin{enumerate}[a)]
+		\item $\mathrm{Gamma}(1,\lambda) \sim \mathrm{Exp}(\lambda)$
+		\item $\mathrm{Gamma}(\frac{n}{2},\frac{1}{2}) \sim \chi^2(n)$
+		\item $X \sim \mathrm{Gamma}(\alpha_1, \beta)$ and $Y \sim \mathrm{Gamma}(\alpha_2, \beta)$  $\implies \ X+Y \sim \mathrm{Gamma}(\alpha_1 + \alpha_2, \beta)$ indep. of $\frac{X}{Y}$.
+		\item $X \sim \mathrm{Gamma}(\alpha_1, \beta)$ and $Y \sim \mathrm{Gamma}(\alpha_2, \beta)$  $\implies \ \frac{X}{X+Y} \sim \mathrm{Beta}(\alpha_1 , \alpha_2)$
+	\end{enumerate}
+\end{prop}
+
+\subsubsection{Normal distribution}
+\begin{prop}Let $X \sim N(\mu, \sigma^2)$.
+	\begin{enumerate}[a)]
+		\item $\EE( X -\mu)^{2k+1} = 0$
+		\item $\EE( X - \mu )^{2k} = \sigma^{2k} \cdot (2k-1)!!$
+		\item \textbf{Stein's lemma}. $\EE g'(X) = \EE Xg(X)$.
+	\end{enumerate}
+\end{prop}
+
+\begin{prop}Let $\underline{X} \sim N_n( \boldsymbol{\mu}, \Sigma)$.
+	\begin{enumerate}[a)]
+		\item Its pdf is 
+		$$  $$
+		\item Its MGF is  
+		$$  $$
+		\item 
+	\end{enumerate}
+\end{prop}
+
+\subsubsection{Chi-square, t-distribution, and F-distribution}
+
+\newpage
+\subsection{Order statistics}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ c | c | c | c }
+		\hline
+		\textbf{Distribution of $\underline{X}$} & \textbf{Distribution of $X_{(k)}$} & \textbf{Distribution of $X_{1}$} & \textbf{Distribution of $X_{n}$}  \\ 
+		$X_i \SimIID U(0,1)$ & & & \\
+		$X_i \SimIID \mathrm{Gamma}(1, n\beta)$ & & & \\ 
+		\hline 
+	\end{tabular} 
+	\caption{\textbf{List of Order Statistics}}
+	\label{tab:OrderStat}
+\end{table} 
+
+\subsection{Conditional distributions}
+%Let $Y$ be a function of $\underline{X}$. We are interested in the distribution of $X|Y$.
+\begin{table}[h]
+	\centering
+\begin{tabular}{ c | c | c }
+	\hline
+	\textbf{Distribution of $\underline{X}$} & $\boldsymbol{Y}$ & \textbf{Distribution of $\underline{X}|Y$ or of $X_i|Y$} \\ 
+	\hline 
+	  $X_i \SimIID \mathrm{Poisson}(\lambda)$  & $Y = \sum_{i=1}^n X$ & $\PP( \underline{X}=\underline{x} \mid Y=N ) = \frac{N!}{\prod_{i=1}^n x_i!} ( \frac{1}{n} )^{\sum_{i=1}^n x_i} \cdot \IndOne(\sum_{i=1}^n x_i = N)$ \\
+	 & & {\textbf{Note:}  $X_i | Y = N \sim \mathrm{Bin}(N, \frac{1}{n}) $ } \\
+	 $X_i \SimIID \mathrm{Exp}(\lambda)$ & $Y = \sum_{i=1}^n X$ & $f_{X_i|Y=y}(x) = \frac{1}{\mathrm{B}(1,n-1)} (1- \frac{x}{y})^{n-2}  \frac{1}{y} \cdot \IndOne[0,y]$\\
+	%$X_i \SimIID \mathrm{Bin}(n,p)$ & $Y = \sum_{i=1}^n X$ & \\
+	$X_i \SimIID N(\mu, \sigma^2)$ & $Y = \sum_{i=1}^n X$ & $X_i|Y=y \sim N(\frac{y}{n}, \sigma^2(1-\frac{1}{n}))$\\
+	& & {\textbf{Note:} $(X_i, Y) \sim N_2( \begin{pmatrix}
+		\mu \\
+		n\mu
+		\end{pmatrix}, \sigma^2 \begin{pmatrix}
+		1 & 1 \\
+		1& n 
+		\end{pmatrix} )$}\\
+	$X = \binom{X^{(1)}}{X^{(2)}} \sim N_{r+s}(\mu, \Sigma )$ & $Y = X^{(2)}$ & $X|Y=y \sim N_r( \mu_1 + \Sigma_{12}\Sigma^{-1}_{22}(y-\mu_2), \Sigma_{11} - \Sigma_{12}\Sigma^2_{22} \Sigma_{21} )$\\
+	\hline 
+\end{tabular} 
+	\caption{\textbf{List of Conditional Distributions}}
+	\label{tab:CondDist}
+\end{table}
+
+\section{Appendix: Exponential family}
+\begin{mydef}
+	$$f_X(x|\theta) = h(x) e^{\eta(\theta) T(x) - A(\eta) }$$
+\end{mydef}
+
+\begin{prop}
+	The moment generating function of $T(\underline{X})$ is 
+	$$M_T(u) = e^{ A(\eta + u)  - A(\eta) }.$$
+\end{prop}
+
+\begin{cor}
+	\begin{align*}
+		\EE T_j & = \frac{\partial}{\eta_j} A(\eta) \\
+		\Cov(T_i, T_j) & = \frac{\partial^2}{\partial \eta_i \partial \eta_j} A(\eta)
+	\end{align*}
+\end{cor}
