@@ -7,6 +7,8 @@ These are the notes that I took in the past. And some of them are made for teach
 
 * Notes on Financial Modeling [here](./notes/fm/document.pdf)
 
+* A Basic Statistical Notes [here](./notes/st/document.pdf)
+
 TODO - add more details
 
 ## Project
