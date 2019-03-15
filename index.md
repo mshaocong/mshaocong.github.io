@@ -1,5 +1,5 @@
 ## Notes
-I typed some notes for some class I took in the past. I am still mantaining these notes, and I will update them frequently.
+I typed several notes for some class I took in the past. I am still mantaining these notes, and I will update them frequently.
 
 ### Probability and Financial Math
 
