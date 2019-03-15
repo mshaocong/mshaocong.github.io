@@ -1,7 +1,7 @@
-# Notes
+## Notes
 I typed some notes for some class I took in the past. I am still mantaining these notes, and I will update them frequently.
 
-## Probability and Financial Math
+### Probability and Financial Math
 
 * [Notes on Dynamical Systems](./notes/anosovnote.pdf). This is a self-contained notes about some basic definitions and tools in dynamical systems. I checked details of some example given in Smale's paper, *Differentiable dynamical systems* (1967).  
     
@@ -13,15 +13,15 @@ I typed some notes for some class I took in the past. I am still mantaining thes
 
 * [Notes on Actuarial Statistics](./notes/Actuarial.pdf). These slides were made for teaching an undergraduate-level actuarial math section. In each section, I took a brief review about some fundamental concepts and went over some examples.  
 
-## Statistics and Machine Learning
+### Statistics and Machine Learning
 
 * A basic Statistics Notes on [Point Estimation](./notes/st/document.pdf).
 
 * [An introduction to XGboost](./notes/xgboostppt.pdf). 
 
-# Project
+## Project
 I will put more details later. For now please visit my [GitHub](https://github.com/mshaocong).
 
-# Contact
+## Contact
 
 * Email: scma0908@gmail.com
