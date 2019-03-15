@@ -4,24 +4,22 @@ I typed some notes for some class I took in the past. I am still mantaining thes
 * Probability and Financial Math
     * [Notes on Dynamical Systems](./notes/anosovnote.pdf). This is a self-contained notes about some basic definitions and tools in dynamical systems. I checked details of some example given in Smale's paper, *Differentiable dynamical systems* (1967).  
     
-    * Notes on Probability: 
+    * [Notes on Probability](./notes/Prob.pdf) is an entry-level probability note, including convergence of random variables, martingale theory, Markov processes, and Brownian motions.
     
-      [This note](./notes/Prob.pdf), it is an entry-level probability note. And I also write [another note](./notes/Prob2.pdf); in this one, I recorded something beyond the class I took. For example, I was taught to check Carleman's condition for solving some moment problems; in that note, I tried to proved a moment problem using a more general method.  
+    * And I also write [another probability note](./notes/Prob2.pdf). It is a little beyond the class I took.    
 
-    * [Notes on Financial Modeling](./notes/fm/document.pdf).
+    * [Notes on Financial Modeling](./notes/fm/document.pdf). Pricing an option for the standard Black-Scholes model, or for the local volatility model, or for the stochastic volatility model. And modeling for bonds and defaults. 
 
-    * Notes on Actuarial Statistics [here](./notes/Actuarial.pdf)
+    * [Notes on Actuarial Statistics](./notes/Actuarial.pdf). These slides were made for teaching an undergraduate-level actuarial math section. In each section, I took a brief review about some fundamental concepts and went over some examples.  
 
 * Statistics and Machine Learning
 
-    * A Basic Statistical Notes [here](./notes/st/document.pdf)
+    * A basic Statistics Notes on [Point Estimation](./notes/st/document.pdf).
 
-    * An introduction to XGboost [here](./notes/xgboostppt.pdf)
-
-TODO - add more details
+    * [An introduction to XGboost](./notes/xgboostppt.pdf). 
 
 ## Project
-TODO - introduction of project here
+I will put more details later. For now please visit my [GitHub](https://github.com/mshaocong).
 
 ## Contact
 
