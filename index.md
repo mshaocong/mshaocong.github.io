@@ -6,7 +6,7 @@ I typed some notes for some class I took in the past. I am still mantaining thes
     
     * [Notes on Probability](./notes/Prob.pdf) is an entry-level probability note, including convergence of random variables, martingale theory, Markov processes, and Brownian motions.
     
-    * And I also write [another probability note](./notes/Prob2.pdf). It is a little beyond the class I took.    
+    * And I also write [another probability note](./notes/Prob2.pdf). It is a little bit beyond the class I took.    
 
     * [Notes on Financial Modeling](./notes/fm/document.pdf). Pricing an option for the standard Black-Scholes model, or for the local volatility model, or for the stochastic volatility model. And modeling for bonds and defaults. 
 
