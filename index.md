@@ -15,7 +15,7 @@ I typed several notes for some class I took in the past. I am still mantaining t
 
 ### Statistics and Machine Learning
 
-* A basic Statistics Notes on [Point Estimation](./notes/st/document.pdf).
+* [A basic Statistics Notes](./notes/st/document.pdf).
 
 * [An introduction to XGboost](./notes/xgboostppt.pdf). 
 
