@@ -225,11 +225,7 @@ $\sigma_{YX}$& $=\mathbb{E}[Y(X-\mu)]$\\
 		
 		\item If $\exists \varphi \in U_\alpha$ s.t. $\beta_\varphi (\theta) \geq \beta_{\varphi'}(\theta) \ \forall \varphi' \in U_\alpha,\ \forall \theta \in \Theta_1$, then $\varphi$ is called a \uline{UMP unbiased test.}
 	\end{itemize}
-\end{mydef}
- 
-\begin{exap}
-	content...
-\end{exap}
+\end{mydef} 
  
 \begin{mydef}\textbf{ }
 	\begin{itemize}
@@ -248,15 +244,7 @@ $\sigma_{YX}$& $=\mathbb{E}[Y(X-\mu)]$\\
 It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased test. The following theorem tells us tests that are UMP $\alpha$-similar on the boundary are often UMP unbiased.
 \begin{thm}
 	If $\beta_\varphi$ is continuous in $\theta$ for all $\varphi$. And $\varphi^\ast$ is UMP $\alpha$-similar test on $\Lambda$ with size $\alpha$, then $\varphi^\ast$ is a UMP unbiased test.
-\end{thm}
-\begin{proof}
-	content...
-\end{proof}
-
-\begin{exap}
-	content...
-\end{exap}
-
+\end{thm} 
 \subsection{Exponential family: Part III}
 \begin{thm}
 	The $1$-parameter exponential family
@@ -310,10 +298,7 @@ It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased tes
 	\end{cases}$$
 	where $d_i,\gamma_i$ are chosen s.t. $\EE_{\theta_0} \varphi_b(X)=\alpha$ and $\EE_{\theta_0}(T(X) \varphi_b(X)) = \alpha \EE_{\theta_0}(T(X))$, is a UMP unbiased size $\alpha$ test.
 \end{thm}
-
-\begin{exap}
-	content...
-\end{exap}
+ 
 
 \subsection{Generalized likelihood ratio tests (GLRT)}
 \begin{mydef}
@@ -392,16 +377,7 @@ It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased tes
 		\item 
 	\end{itemize}
 \end{thm}
-
-
-\begin{exap}
-	$X_i \SimIID N(\mu, \sigma^2)$.
-\end{exap}
-
-\begin{exap}
-	$X_i \SimIID N(\mu, \sigma^2)$.
-\end{exap}
-
+ 
 
 \subsection{Other large sample tests}
 \begin{mydef} Begin again with
@@ -414,10 +390,7 @@ It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased tes
 			$$W_n = n(\hat{\theta}_n - \theta_0)^T I(\theta_0) (\hat{\theta}_n - \theta_0) $$
 			where $\hat{\theta}_n$ is the general MLE.
 	\end{itemize}
-\end{mydef}
-\begin{remark}
-	content...
-\end{remark}
+\end{mydef} 
 
 \begin{prop}
 	\begin{enumerate}[a)]
@@ -427,27 +400,4 @@ It is easier to find a UMP $\alpha$-similar test than to find a UMP unbiased tes
 
 		\item $W_n = -2 \log \lambda(x) + o_p(1)$.
 	\end{enumerate}
-\end{prop}
-\begin{proof}
-	content...
-\end{proof}
-
-\begin{exap}
-	$X_i \SimIID \mathrm{Poisson}(\theta)$. $H_0: \theta = \theta_0$ vs $H_1: \theta \neq \theta_0.$ 
-	
-	\begin{itemize}
-		\item \textbf{GLRT}:
-		
-		\item \textbf{Score test}:
-		
-		\item \textbf{Wald test}:
-	\end{itemize}
-\end{exap}
-
-\begin{mydef}
-	Extension to composite nulls: 
-	$$H_0: \theta \in \Theta_0,$$
-	where $\Theta_0 = \{ \theta \in \Theta: \theta_j = \theta_{0,j},\ j=1,\dots,q \}$.
-\end{mydef}
-
-\subsection{Goodness-of-fit and Pearson's $\chi^2$-test}
+\end{prop} 

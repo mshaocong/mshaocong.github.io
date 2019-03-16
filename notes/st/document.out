@@ -22,27 +22,16 @@
 \BOOKMARK [2][-]{subsection.3.5}{Exponential family: Part III}{section.3}% 22
 \BOOKMARK [2][-]{subsection.3.6}{Generalized likelihood ratio tests \(GLRT\)}{section.3}% 23
 \BOOKMARK [2][-]{subsection.3.7}{Other large sample tests}{section.3}% 24
-\BOOKMARK [2][-]{subsection.3.8}{Goodness-of-fit and Pearson's 2-test}{section.3}% 25
-\BOOKMARK [1][-]{section.4}{Decision Theory and Bayes Methods}{}% 26
-\BOOKMARK [2][-]{subsection.4.1}{Basic Setting: Bayes methods}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.2}{Basic Setting: Decision theory}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.3}{Minimax rules}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.4}{Bayes rules}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.5}{Admissability}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.6}{Minimax rules: Revisited}{section.4}% 32
-\BOOKMARK [1][-]{section.5}{Confidence Estimation}{}% 33
-\BOOKMARK [2][-]{subsection.5.1}{Confident bounds and confident intervals}{section.5}% 34
-\BOOKMARK [2][-]{subsection.5.2}{Confident sets and uniformly most accuracy \(UMA\)}{section.5}% 35
-\BOOKMARK [2][-]{subsection.5.3}{Duality between confident sets and hypothesis tests}{section.5}% 36
-\BOOKMARK [2][-]{subsection.5.4}{Unbiased confident sets}{section.5}% 37
-\BOOKMARK [2][-]{subsection.5.5}{Pivots}{section.5}% 38
-\BOOKMARK [2][-]{subsection.5.6}{Shortest length confident intervals}{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.7}{Bayes credible intervals}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.8}{Large sample confident intervals}{section.5}% 41
-\BOOKMARK [1][-]{appendix.A}{Appendix: Derivatives of matrices and vectors}{}% 42
-\BOOKMARK [1][-]{appendix.B}{Appendix: Distributions}{}% 43
-\BOOKMARK [2][-]{subsection.B.1}{List of distributions}{appendix.B}% 44
-\BOOKMARK [2][-]{subsection.B.2}{Related distributions}{appendix.B}% 45
-\BOOKMARK [2][-]{subsection.B.3}{Order statistics}{appendix.B}% 46
-\BOOKMARK [2][-]{subsection.B.4}{Conditional distributions}{appendix.B}% 47
-\BOOKMARK [1][-]{appendix.C}{Appendix: Exponential family}{}% 48
+\BOOKMARK [1][-]{section.4}{Decision Theory and Bayes Methods}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Basic Setting: Bayes methods}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Basic Setting: Decision theory}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Bayes rules}{section.4}% 28
+\BOOKMARK [1][-]{section.5}{Confidence Estimation}{}% 29
+\BOOKMARK [2][-]{subsection.5.1}{Confident bounds and confident intervals}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.2}{Confident sets and uniformly most accuracy \(UMA\)}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.3}{Duality between confident sets and hypothesis tests}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.4}{Unbiased confident sets}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.5}{Pivots}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.6}{Shortest length confident intervals}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.7}{Bayes credible intervals}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.8}{Large sample confident intervals}{section.5}% 37
