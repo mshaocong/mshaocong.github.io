@@ -19,6 +19,8 @@ I typed several notes for some class I took in the past. I am still mantaining t
 
 * [An introduction to XGboost](./notes/xgboostppt.pdf). 
 
+* [Survival Analysis](https://github.com/mshaocong/mshaocong.github.io/tree/master/notes/sa)
+
 ## Project
 I will put more details later. For now please visit my [GitHub](https://github.com/mshaocong).
 
