@@ -3,7 +3,7 @@ I typed several notes for some class I took in the past. I am still mantaining t
 
 ### Machine Learning
 
-* [Note on Reinforcement Learning]("./notes/rl/Reinforcement Learning/document.pdf"). 
+* [Note on Reinforcement Learning](./notes/rl/Reinforcement\ Learning/document.pdf). 
 
 
 ### Probability and Financial Math
