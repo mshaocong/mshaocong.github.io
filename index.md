@@ -1,6 +1,11 @@
 ## Notes
 I typed several notes for some class I took in the past. I am still mantaining these notes, and I will update them frequently.
 
+### Machine Learning
+
+* [Note on Reinforcement Learning](./notes/rl/Reinforcement Learning/document.pdf). 
+
+
 ### Probability and Financial Math
 
 * [Notes on Dynamical Systems](./notes/anosovnote.pdf). This is a self-contained notes about some basic definitions and tools in dynamical systems. I checked details of some example given in Smale's paper, *Differentiable dynamical systems* (1967).  
