@@ -53,6 +53,8 @@ education:
       university: University of Utah
       time: 2019 - 2022
       details: |
+        GPA: 4.0/4.0
+        
         Research Interests:
           - Reinforcement Learning  
           - Optimization
@@ -62,12 +64,12 @@ education:
       university: University of California, Santa Barbara
       time: 2017 - 2019
       details: |
-        "GPA: 3.9/4.0"
+        GPA: 3.9/4.0
     - degree: B.S. in Statistics
       university: Sichuan University
       time: 2013 - 2017
       details: |
-        "GPA: 3.6/4.0"
+        GPA: 3.6/4.0
 
 
 publications:
