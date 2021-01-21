@@ -45,9 +45,11 @@ career-profile:
       
       Shaocong Ma is a second-year Ph.D. student in University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, he earned a M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
-        Research interests: | 
+        Research interests: >
         
-        Reinforcement Learning, Optimization in Machine Learning, Probability Theory
+        -Reinforcement Learning |
+        -Optimization in Machine Learning| 
+        -Probability Theory
       
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
