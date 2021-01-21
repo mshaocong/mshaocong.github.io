@@ -45,10 +45,9 @@ career-profile:
       
       Shaocong Ma is a second-year Ph.D. student in University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, he earned a M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
-        Research interests:
-          * Reinforcement Learning  
-          * Optimization in Machine Learning
-          * Probability Theory
+        Research interests: | 
+        
+        Reinforcement Learning, Optimization in Machine Learning, Probability Theory
       
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
@@ -73,9 +72,7 @@ education:
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+    
     papers:
       - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
         link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
@@ -93,18 +90,18 @@ publications:
         conference: "ICLR. 2021."
 
        
-projects:
-    title: In-Progress Projects
-    intro: >
-      I am actively working on the following projects. Most of them will be published to conference or arXiv soon.
-    assignments:
-      - title: A Convergent Single-Loop Proximal-GDA Algorithm with Momentum for Nonconvex Minimax Optimization
-        link: "#"
-        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum."
-
-      - title: Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises
-        link: "#"
-        tagline: "A general framework for a large class of optimal control algorithm with a finite-sample convergence analysis."
+#projects:
+#    title: In-Progress Projects
+#    intro: >
+#      I am actively working on the following projects. Most of them will be published to conference or arXiv #soon.
+#    assignments:
+#      - title: A Convergent Single-Loop Proximal-GDA Algorithm with Momentum for Nonconvex Minimax Optimization
+#        link: "#"
+#        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum."
+#
+#      - title: Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises
+#        link: "#"
+#        tagline: "A general framework for a large class of optimal control algorithm with a finite-sample convergence analysis."
  
 skills:
     title: Skills &amp; Proficiency
@@ -121,12 +118,7 @@ skills:
 
       - name: HTML5 & CSS
         level: 75%
-
-      - name: Ruby on Rails
-        level: 85%
-
-      - name: Sketch & Photoshop
-        level: 60%
+ 
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
