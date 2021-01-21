@@ -78,22 +78,32 @@ publications:
     intro: |
     
     papers:
-      - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
-        link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
-        authors: Shaocong Ma, Yi Zhou
-        conference: "ICML. 2020. (Acceptance rate: 21.8%)"
-
-      - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
-        link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
-        authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
-        conference: "NeurIPS. 2020. (Acceptance rate: 20.1%)"
-
+    
       - title: "Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity"
         link: "https://openreview.net/forum?id=6t_dLShIUyZ"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou
         conference: "ICLR. 2021. (Acceptance rate: 28.7%)"
 
-       
+      - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
+        link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
+        authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
+        conference: "NeurIPS. 2020. (Acceptance rate: 20.1%)"
+    
+      - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
+        link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
+        authors: Shaocong Ma, Yi Zhou
+        conference: "ICML. 2020. (Acceptance rate: 21.8%)"
+        
+      - title: "Single-Loop PGDA with Momentum for Nonconvex Minimax Optimization"
+        link: "#"
+        authors: Shaocong Ma, etc.
+        conference: "Submitted to ICML 2021."
+        
+      - title: "Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises"
+        link: "#"
+        authors: Shaocong Ma, etc. 
+        conference: "In progress."
+
 #projects:
 #    title: In-Progress Projects
 #    intro: >
@@ -118,7 +128,7 @@ skills:
         level: 95%
 
       - name: MATLAB
-        level: 75%
+        level: 60%
 
       - name: HTML5 & CSS
         level: 75%
