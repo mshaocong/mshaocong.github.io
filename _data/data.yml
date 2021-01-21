@@ -96,17 +96,15 @@ publications:
 projects:
     title: In-Progress Projects
     intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      I am actively working on the following projects. Most of them will be published to conference or arXiv soon.
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-      - title: DevStudio
+      - title: A Convergent Single-Loop Proximal-GDA Algorithm with Momentum for Nonconvex Minimax Optimization
         link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum."
+
+      - title: Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises
+        link: "#"
+        tagline: "A general framework for a large class of optimal control algorithm with a finite-sample convergence analysis."
  
 skills:
     title: Skills &amp; Proficiency
