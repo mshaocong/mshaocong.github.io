@@ -89,20 +89,20 @@ publications:
       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
       bibendum fringilla a eu lectus.
     papers:
-      - title: Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle
+      - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
         link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
         authors: Shaocong Ma, Yi Zhou
-        conference: ICML. 2020.
+        conference: "ICML. 2020."
 
       - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
         link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
         authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
-        conference: NeurIPS. 2020.
+        conference: "NeurIPS. 2020."
 
-      - title: Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity
+      - title: "Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity"
         link: "https://openreview.net/forum?id=6t_dLShIUyZ"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou
-        conference: ICLR. 2021.
+        conference: "ICLR. 2021."
 
        
 in-progress projects:
