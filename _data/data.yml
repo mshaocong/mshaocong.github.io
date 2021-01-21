@@ -4,7 +4,7 @@
 
 sidebar:
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: False # set to False if you want education in main section instead of in sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Shaocong Ma
@@ -42,12 +42,13 @@ sidebar:
 career-profile:
     title: Biography
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      
+      Shaocong Ma is a second-year Ph.D. student in University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, he earned a M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
+      
+        Research interests:
+          - Reinforcement Learning  
+          - Optimization in Machine Learning
+          - Probability Theory
       
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
@@ -56,10 +57,6 @@ education:
       details: |
         GPA: 4.0/4.0
         
-        Research Interests:
-          - Reinforcement Learning  
-          - Optimization
-          - Probability Theory
           
     - degree: M.A. in Statistics
       university: University of California, Santa Barbara
