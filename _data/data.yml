@@ -13,9 +13,9 @@ sidebar:
 
     # Sidebar links
     email: scma0908@gmail.com
-    phone: 012 345 6789
+    phone: #012 345 6789
     website:  #do not add http://
-    linkedin: shaocong-ma-700b73181
+    linkedin: # shaocong-ma-700b73181
     github: mshaocong
     telegram: # add your nickname without '@' sign
     gitlab:
@@ -26,21 +26,16 @@ sidebar:
     goodreads: # Number-Username, e.g. 123456-alandoe
 
     languages:
-      - idiom: English
+      - idiom: Mandarin Chinese
         level: Native
 
       - idiom: English
         level: Professional 
 
     interests:
-      - item: Climbing
+      - item: FPS Games
         link:
-
-      - item: Snowboarding
-        link:
-
-      - item: Cooking
-        link:
+ 
 
 #career-profile:
 #    title: Career Profile
@@ -52,9 +47,9 @@ sidebar:
 #      Donec quam felis, ultricies nec, pellentesque eu.
 #      Second paragraph if required.
 education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
+    - degree: Ph.D. in Electrical and Computer Engineering
+      university: University of Utah
+      time: 2019 - 2022
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -63,9 +58,9 @@ education:
         pretium quis, sem.
           - Bullet point
           - Bullet point
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
+    - degree: M.A. in Statistics
+      university: University of California, Santa Barbara
+      time: 2017 - 2019
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -74,9 +69,9 @@ education:
         pretium quis, sem.
           - Bullet point
           - Bullet point
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
+    - degree: B.S. in Statistics
+      university: Sichuan University
+      time: 2013 - 2017
       details: |
         Describe your study here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -85,45 +80,32 @@ education:
         pretium quis, sem.
           - Bullet point
           - Bullet point
-experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-projects:
+
+
+publications:
+    title: Publications
+    intro: |
+      You can list your publications in this section. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+      bibendum fringilla a eu lectus.
+    papers:
+      - title: Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle
+        link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
+        authors: Shaocong Ma, Yi Zhou
+        conference: ICML. 2020.
+
+      - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
+        link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
+        authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
+        conference: NeurIPS. 2020.
+
+      - title: Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity
+        link: "https://openreview.net/forum?id=6t_dLShIUyZ"
+        authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou
+        conference: ICLR. 2021.
+
+       
+in-progress projects:
     title: Projects
     intro: >
       You can list your side projects or open source libraries in this
@@ -149,28 +131,6 @@ projects:
       - title: Delta
         link: "#"
         tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-    papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
-
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
 
 skills:
     title: Skills &amp; Proficiency
