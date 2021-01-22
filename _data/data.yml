@@ -79,6 +79,17 @@ publications:
     
     papers:
     
+      - title: "Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises"
+        link: "#"
+        authors: Shaocong Ma, etc. 
+        conference: "In progress."
+        
+      - title: "Single-Loop PGDA with Momentum for Nonconvex Minimax Optimization"
+        link: "#"
+        authors: Shaocong Ma, etc.
+        conference: "Submitted to ICML 2021."
+        
+    
       - title: "Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity"
         link: "https://openreview.net/forum?id=6t_dLShIUyZ"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou
@@ -94,15 +105,6 @@ publications:
         authors: Shaocong Ma, Yi Zhou
         conference: "ICML. 2020. (Acceptance rate: 21.8%)"
         
-      - title: "Single-Loop PGDA with Momentum for Nonconvex Minimax Optimization"
-        link: "#"
-        authors: Shaocong Ma, etc.
-        conference: "Submitted to ICML 2021."
-        
-      - title: "Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises"
-        link: "#"
-        authors: Shaocong Ma, etc. 
-        conference: "In progress."
 
 #projects:
 #    title: In-Progress Projects
@@ -111,11 +113,7 @@ publications:
 #    assignments:
 #      - title: A Convergent Single-Loop Proximal-GDA Algorithm with Momentum for Nonconvex Minimax Optimization
 #        link: "#"
-#        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum."
-#
-#      - title: Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises
-#        link: "#"
-#        tagline: "A general framework for a large class of optimal control algorithm with a finite-sample convergence analysis."
+#        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum." 
  
 skills:
     title: Skills &amp; Proficiency
