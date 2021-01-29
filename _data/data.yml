@@ -127,21 +127,21 @@ projects:
         link: "#"
         tagline:  
  
-skills:
-    title: Selected Courses &amp; Proficiency
+# skills:
+    # title: Selected Courses &amp; Proficiency
 
-    toolset:
-      - name: Algebraic Geometry 
-        level: 94%
+    # toolset:
+      # - name: Algebraic Geometry 
+        # level: 94%
 
-      - name: Lie Algebras  
-        level: 85%
+      # - name: Lie Algebras  
+        # level: 85%
 
-      - name: Differential Geometry
-        level: 87%
+      # - name: Differential Geometry
+        # level: 87%
 
-      - name: Functional Analysis
-        level: 87%
+      # - name: Functional Analysis
+        # level: 87%
  
  #     - name: Real Analysis
  #       level: 90%
