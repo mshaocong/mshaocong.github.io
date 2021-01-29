@@ -114,6 +114,18 @@ projects:
       - title: Dynamical Systems
         link: "#"
         tagline: "Dynamical systems, Anosov diffeomorphism" 
+        
+      - title: Federated Learning 
+        link: "#"
+        tagline: "Distributed learning, Non-convex optimization" 
+        
+      - title: Financial Modeling
+        link: "#"
+        tagline: "Asset pricing" 
+        
+      - title: Reinforcement Learning
+        link: "#"
+        tagline:  
  
 skills:
     title: Selected Courses &amp; Proficiency
