@@ -106,31 +106,35 @@ publications:
         conference: "ICML. 2020. (Acceptance rate: 21.8%)"
         
 
-#projects:
-#    title: In-Progress Projects
-#    intro: >
-#      I am actively working on the following projects. Most of them will be published to conference or arXiv #soon.
-#    assignments:
-#      - title: A Convergent Single-Loop Proximal-GDA Algorithm with Momentum for Nonconvex Minimax Optimization
-#        link: "#"
-#        tagline: "Submitted to ICML 2021. A novel convergence analysis for the classical Proximal-GDA algorithm with momentum." 
+projects:
+    title: Notes
+    intro: >
+      I am actively working on the following notes. Most of them are made during my courses taken at Sichuan University.
+    assignments:
+      - title: Dynamical Systems
+        link: "#"
+        tagline: "Dynamical systems, Anosov diffeomorphism" 
  
 skills:
-    title: Skills &amp; Proficiency
+    title: Selected Courses &amp; Proficiency
 
     toolset:
-      - name: Python 
-        level: 95%
+      - name: Algebraic Geometry 
+        level: 94%
 
-      - name: R  
-        level: 95%
+      - name: Lie Algebras  
+        level: 85%
 
-      - name: MATLAB
-        level: 60%
+      - name: Differential Geometry
+        level: 87%
 
-      - name: HTML5 & CSS
-        level: 75%
+      - name: Functional Analysis
+        level: 87%
  
-
+      - name: Real Analysis
+        level: 90%
+ 
+        - name: Complex Analysis
+            level: 99%
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
