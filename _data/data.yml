@@ -109,27 +109,27 @@ projects:
     assignments:
       - title: Undergraduate Thesis on Dynamical Systems
         link: "anosov.pdf"
-        tagline: "Structural stability, Shadowing property" 
+        tagline:  
         
       - title: Course Project on Federated Learning 
         link: "project.pdf"
-        tagline: "Distributed learning, Non-convex optimization" 
+        tagline:  
         
       - title: Note on Financial Modeling
         link: "Finance.pdf"
-        tagline: "Asset pricing" 
+        tagline:  
         
       - title: Note on Reinforcement Learning
         link: "RL.pdf"
-        tagline:  "Machine learning, Reinforcement learning"
+        tagline:   
         
       - title: Note on Actuarial Statistics
         link: "actuarial.pdf"
-        tagline:  "Insurance pricing"
+        tagline:   
         
       - title: Note on Statistics
         link: "Stat.pdf"
-        tagline:  "Statistics"
+        tagline:   
  
 # skills:
     # title: Selected Courses &amp; Proficiency
