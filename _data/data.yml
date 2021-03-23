@@ -49,9 +49,7 @@ career-profile:
         
         - Reinforcement Learning  
         
-        - Optimization in Machine Learning 
-        
-        - Probability Theory
+        - Optimization and Stochastic Approximation in Machine Learning 
       
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
@@ -77,12 +75,7 @@ publications:
     title: Publications
     intro: |
     
-    papers:
-    
-      - title: "Finite-Sample Analysis for Generalized Q-Learning under Markovian Noises"
-        link: "#"
-        authors: Shaocong Ma, etc. 
-        conference: "In progress."
+    papers: 
         
       - title: "Single-Loop PGDA with Momentum for Nonconvex Minimax Optimization"
         link: "#"
