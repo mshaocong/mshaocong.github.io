@@ -105,23 +105,31 @@ publications:
 projects:
     title: Notes
     intro: >
-      I am actively working on the following notes. Most of them are made during my courses taken at Sichuan University.
+      Here are some my past work, including some unpublished results and course notes.   
     assignments:
-      - title: Dynamical Systems
-        link: "#"
-        tagline: "Dynamical systems, Anosov diffeomorphism" 
+      - title: Undergraduate Thesis on Dynamical Systems
+        link: "anosov.pdf"
+        tagline: "Structural stability, Shadowing property" 
         
-      - title: Federated Learning 
-        link: "#"
+      - title: Course Project on Federated Learning 
+        link: "project.pdf"
         tagline: "Distributed learning, Non-convex optimization" 
         
-      - title: Financial Modeling
-        link: "#"
+      - title: Note on Financial Modeling
+        link: "Finance.pdf"
         tagline: "Asset pricing" 
         
-      - title: Reinforcement Learning
-        link: "#"
-        tagline:  
+      - title: Note on Reinforcement Learning
+        link: "RL.pdf"
+        tagline:  "Machine learning, Reinforcement learning"
+        
+      - title: Note on Actuarial Statistics
+        link: "actuarial.pdf"
+        tagline:  "Insurance pricing"
+        
+      - title: Note on Statistics
+        link: "Stat.pdf"
+        tagline:  "Statistics"
  
 # skills:
     # title: Selected Courses &amp; Proficiency
