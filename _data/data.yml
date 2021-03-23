@@ -45,11 +45,14 @@ career-profile:
       
       Shaocong Ma is a second-year Ph.D. student in University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, he earned a M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
+        Most Updated CV: [Here](https://mshaocong.github.io/CV20200324.pdf)
+        
         Research interests: 
         
         - Reinforcement Learning  
         
-        - Optimization and Stochastic Approximation in Machine Learning 
+        - Optimization and Stochastic Approximation
+        
       
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
@@ -117,7 +120,7 @@ projects:
         tagline: "Asset pricing" 
         
       - title: Reinforcement Learning
-        link: "CV20200324.pdf"
+        link: "#"
         tagline:  
  
 # skills:
