@@ -131,26 +131,20 @@ publications:
 #        link: "Stat.pdf"
 #        tagline:   
  
-# skills:
-    # title: Selected Courses &amp; Proficiency
+skills:
+   title: Skills
 
-    # toolset:
-      # - name: Algebraic Geometry 
-        # level: 94%
-
-      # - name: Lie Algebras  
-        # level: 85%
-
-      # - name: Differential Geometry
-        # level: 87%
-
-      # - name: Functional Analysis
-        # level: 87%
- 
- #     - name: Real Analysis
- #       level: 90%
- 
- #       - name: Complex Analysis
- #           level: 99%
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    toolset:
+       - name: Python
+         level: 90% 
+       - name: C++
+         level: 75% 
+       - name: R
+         level: 75% 
+       - name: SQL
+         level: 75% 
+      - name: MATLAB
+         level: 50% 
+         
+#footer: >
+#    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
