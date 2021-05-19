@@ -137,7 +137,7 @@ skills:
     toolset:
        - name: Python
          level: 90% 
-       - name: C++
+       - name: CPP
          level: 75% 
        - name: R
          level: 75% 
