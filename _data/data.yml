@@ -107,7 +107,7 @@ projects:
     intro: >
       Here are some my past work, including some unpublished results and course notes.   
     assignments: 
-      - title: Federated Learning: A simple algorithm that outperforms FedAvg
+      - title: Federated Learning - A simple algorithm that outperforms FedAvg
         link: "project.pdf"
         tagline:  
         
@@ -127,20 +127,20 @@ projects:
         link: "Stat.pdf"
         tagline:   
  
-#skills:
-#   title: Skills
-#
- #   toolset:
-  #     - name: Python
-   #      level: 90% 
-    #   - name: CPP
-     #    level: 75% 
-      # - name: R
-       #  level: 75% 
-       #- name: SQL
-       #  level: 75% 
-      #- name: MATLAB
-       #  level: 50% 
+skills:
+   title: Skills &amp; Proficiency
+
+    toolset:
+       - name: Python
+         level: 90% 
+       - name: CPP
+         level: 75% 
+       - name: R
+         level: 75% 
+       - name: SQL
+         level: 75% 
+     - name: MATLAB
+         level: 50% 
          
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
