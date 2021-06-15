@@ -81,12 +81,7 @@ publications:
     intro: |
     
     papers: 
-        
-      - title: "On the High-Probability Convergence of Stochastic Optimization under Markovian Sampling"
-        link: "#"
-        authors: Shaocong Ma, etc.
-        conference: "Submitted to NeurIPS 2021."
-        
+         
     
       - title: "Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity"
         link: "https://openreview.net/forum?id=6t_dLShIUyZ"
