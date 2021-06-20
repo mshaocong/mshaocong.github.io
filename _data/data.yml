@@ -55,7 +55,32 @@ career-profile:
         
         - Learning Theory
         
-      
+ 
+experiences: 
+    - role: Research Assistant
+      time: 2019 - Present 
+      company: University of Utah
+      details: |
+        I leaded several machine learning projects in Professor Yi Zhou's lab. My role is to design faster or more stable algorithm in the large-scale machine learning task. I deeply investigated and fulfilled the gap between the over-simplified model used in academic field and the practical algorithms used in real industrial environment.
+    
+    - role: Teaching Assistant
+      time: 2020 - 2021
+      company: University of Utah
+      details: |
+        I instructed labs of electrical and computer engineering during the Ph.D. program. Courses include:      
+          - ECE 3500: Fundamentals of Signals and Systems 
+    
+    - role: Teaching Assistant
+      time: 2018 - 2019
+      company: University of California, Santa Barbara
+      details: |
+        I instructed sections/labs of statistics and data science courses during the Master program. Courses include:      
+          - PSTAT 5A: Statistics   
+          - PSTAT 5LS: Statistics for Life Science
+          - PSTAT 109: Statistics for Economics 
+          - PSTAT 172A: Actuarial Statistics
+          - PSTAT 175: Survival Analysis
+ 
 education:
     - degree: Ph.D. in Electrical and Computer Engineering
       university: University of Utah
