@@ -135,6 +135,10 @@ projects:
         link: "project.pdf"
         tagline:  
         
+      - title: Optimization - An improved algorithm solving nonconvex min-max problem
+        link: "GDA.pdf"
+        tagline:  
+        
       - title: Note on Financial Modeling
         link: "Finance.pdf"
         tagline:  
