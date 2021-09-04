@@ -52,10 +52,9 @@ career-profile:
         - Optimization and Stochastic Approximation 
         - Learning Theory
         
-        Review experiences: 
-        - Reviewer. NeurIPS 2021. 
-        - Program Committee Member. IEEE BigData 2021 Workshop.
-        - Sub-reviewer. ICML 2021 Workshop. 
+        Academic services: 
+        - Reviewer. NeurIPS 2021, ICML 2021 Workshop. 
+        - Program Committee. IEEE BigData 2021 Workshop. 
         
  
 experiences: 
@@ -133,11 +132,7 @@ projects:
     assignments: 
       - title: Federated Learning - A simple algorithm that outperforms FedAvg
         link: "project.pdf"
-        tagline:  
-        
-      - title: Optimization - An improved algorithm solving nonconvex min-max problem
-        link: "GDA.pdf"
-        tagline:  
+        tagline:   
         
       - title: Note on Financial Modeling
         link: "Finance.pdf"
