@@ -133,6 +133,11 @@ projects:
         link: "project.pdf"
         tagline:   
         
+      - title: A concentration inequality for data with arbitrary depedency  
+        link: "freedman.pdf"
+        tagline:  
+        
+        
       - title: Note on Financial Modeling
         link: "Finance.pdf"
         tagline:  
