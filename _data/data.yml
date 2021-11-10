@@ -129,6 +129,10 @@ projects:
     intro: >
       Here are some my past work, including some unpublished results and course notes.  
     assignments: 
+      - title: Presentation Slides -  Towards Understanding Reinforcement Learning from Optimization Perspectives
+        link: "presentation.pdf"
+        tagline:  
+        
       - title: Federated Learning - A simple algorithm that outperforms FedAvg
         link: "project.pdf"
         tagline:   
