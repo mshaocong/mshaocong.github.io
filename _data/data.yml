@@ -127,7 +127,13 @@ publications:
         link: "https://arxiv.org/abs/2112.11663"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
         conference: "ArXiv Preprint."
-        
+       
+      
+      - title: "Sample Efficient Stochastic Policy Extragradient Algorithm for Zero-Sum Markov Game"
+        link: "https://openreview.net/forum?id=IvepFxYRDG"
+        authors: Ziyi Chen, Shaocong Ma, Yi Zhou
+        conference: "ICLR. 2022."
+
 
 projects:
     title: Notes
