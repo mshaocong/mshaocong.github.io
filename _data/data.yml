@@ -107,32 +107,39 @@ publications:
     
     papers: 
          
+      - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
+        link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
+        authors: Shaocong Ma, Yi Zhou
+        conference: "ICML. 2020. (Acceptance rate: 21.8%)"
+        
+      - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
+        link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
+        authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
+        conference: "NeurIPS. 2020. (Acceptance rate: 20.1%)"
+    
     
       - title: "Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity"
         link: "https://openreview.net/forum?id=6t_dLShIUyZ"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou
         conference: "ICLR. 2021. (Acceptance rate: 28.7%)"
 
-      - title: "Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis"
-        link: "https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf"
-        authors: Shaocong Ma, Yi Zhou, Shaofeng Zou
-        conference: "NeurIPS. 2020. (Acceptance rate: 20.1%)"
-    
-      - title: "Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle"
-        link: "http://proceedings.mlr.press/v119/ma20e/ma20e.pdf"
-        authors: Shaocong Ma, Yi Zhou
-        conference: "ICML. 2020. (Acceptance rate: 21.8%)"
-        
-      - title: "Accelerated Proximal Alternating Gradient-Descent-Ascent for Nonconvex Minimax Machine Learning"
-        link: "https://arxiv.org/abs/2112.11663"
-        authors: Ziyi Chen, Shaocong Ma, Yi Zhou
-        conference: "ArXiv Preprint."
-       
-      
       - title: "Sample Efficient Stochastic Policy Extragradient Algorithm for Zero-Sum Markov Game"
         link: "https://openreview.net/forum?id=IvepFxYRDG"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
         conference: "ICLR. 2022. (Acceptance rate: 32.3%)"
+        
+       
+      - title: "Accelerated Proximal Alternating Gradient-Descent-Ascent for Nonconvex Minimax Machine Learning"
+        link: "https://arxiv.org/abs/2112.11663"
+        authors: Ziyi Chen, Shaocong Ma, Yi Zhou
+        conference: "IEEE ISIT. 2022."
+       
+       
+        
+      - title: "Data Sampling Affects the Complexity of Online SGD over Dependent Data"
+        link: "https://arxiv.org/abs/2204.00006"
+        authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Kaiyi Ji, Yingbin Liang
+        conference: "arXiv preprint."
 
 
 projects:
