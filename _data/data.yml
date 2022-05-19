@@ -13,17 +13,17 @@ sidebar:
 
     # Sidebar links
     email: scma0908@gmail.com
-    phone: #012 345 6789
+    phone: # 
     website:  mshaocong.github.io #do not add http://
     linkedin: # shaocong-ma-700b73181
     github: mshaocong
-    telegram: # add your nickname without '@' sign
+    telegram: #  
     gitlab:
     bitbucket:
     twitter: #'@ILOVEGRIDMAN'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    stack-overflow: #  
     codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
+    goodreads: #  
 
     languages:
       - idiom: Mandarin Chinese
@@ -33,9 +33,9 @@ sidebar:
         level: Professional 
 
     interests:
-      - item: FPS Games
+      - item: Video Games
         link:
-      - item: Animes
+      - item: Anime
         link: 
  
 
@@ -57,6 +57,12 @@ career-profile:
         
  
 experiences: 
+    - role: Student Intern
+      time: 2022.5 - 2022.8
+      company: Lawrence Livermore National Security
+      details: |
+        Develop backpropagation-free training algorithm using zeroth-order optimization. Test the scalability of the approach to large dataset like ImageNet. Test the robustness to out-of-distribution corruptions using popular benchmark datasets.
+
     - role: Research Assistant
       time: 2019 - Present 
       company: University of Utah
@@ -139,7 +145,7 @@ publications:
       - title: "Data Sampling Affects the Complexity of Online SGD over Dependent Data"
         link: "https://arxiv.org/abs/2204.00006"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Kaiyi Ji, Yingbin Liang
-        conference: "arXiv preprint."
+        conference: "UAI. 2022."
 
 
 projects:
