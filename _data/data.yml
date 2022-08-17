@@ -14,7 +14,7 @@ sidebar:
     # Sidebar links
     email: scma0908@gmail.com
     phone: # 
-    website:  mshaocong.github.io #do not add http://
+    website:  scholar.google.com/citations?user=s7oIC2kAAAAJ #do not add http://
     linkedin: # shaocong-ma-700b73181
     github: mshaocong
     telegram: #  
@@ -43,7 +43,7 @@ career-profile:
     title: Biography
     summary: |
       
-      Shaocong Ma is a third-year Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
+      Shaocong Ma is a fourth Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
         Most Updated CV: [Here](https://mshaocong.github.io/CV.pdf) (.pdf version) and [here](https://mshaocong.github.io/CV.docx) (.docx version)
         
@@ -53,7 +53,7 @@ career-profile:
         - Learning Theory
         
         Academic services: 
-        - Reviewer/Program Committee. NeurIPS 2021, IEEE BigData 2021, IJCAI-ECAI 2022, ICML 2022, NeurIPS 2022.
+        - Reviewer/Program Committee. NeurIPS 2021, IEEE BigData 2021, IJCAI-ECAI 2022, ICML 2022, NeurIPS 2022, ICLR 2022.
         
  
 experiences: 
@@ -61,7 +61,7 @@ experiences:
       time: 2022.5 - 2022.8
       company: Lawrence Livermore National Security
       details: |
-        Develop backpropagation-free training algorithm using zeroth-order optimization. Test the scalability of the approach to large dataset like ImageNet. Test the robustness to out-of-distribution corruptions using popular benchmark datasets.
+        Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable layers. Test the    out-of-distribution robustness on CFD (computational fluid dynamics) problem.
 
     - role: Research Assistant
       time: 2019 - Present 
