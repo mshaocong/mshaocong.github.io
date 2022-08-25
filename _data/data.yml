@@ -15,7 +15,7 @@ sidebar:
     email: scma0908@gmail.com
     phone: # 
     website:  mshaocong.github.io #do not add http://
-    linkedin: # shaocong-ma-700b73181
+    linkedin: shaocong-ma-700b73181
     github: mshaocong
     telegram: #  
     gitlab:
@@ -45,12 +45,11 @@ career-profile:
       
       Shaocong Ma is a fourth Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
-        Most Updated CV: [Here](https://mshaocong.github.io/CV.pdf) (.pdf version) and [here](https://mshaocong.github.io/CV.docx) (.docx version)
+        Most Updated CV: [PDF](https://mshaocong.github.io/CV.pdf) 
         
         Research interests: 
         - Reinforcement Learning  
-        - Optimization and Stochastic Approximation 
-        - Learning Theory
+        - Optimization Algorithms
         
         Academic services: 
         - Reviewer/Program Committee. NeurIPS 2021, IEEE BigData 2021, IJCAI-ECAI 2022, ICML 2022, NeurIPS 2022, ICLR 2022.
@@ -61,13 +60,13 @@ experiences:
       time: 2022.5 - 2022.8
       company: Lawrence Livermore National Security
       details: |
-        Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable layers. Test the    out-of-distribution robustness on CFD (computational fluid dynamics) problems.
+        Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable modules. Test the    out-of-distribution robustness on CFD (computational fluid dynamics) problems.
 
     - role: Research Assistant
       time: 2019 - Present 
       company: University of Utah
       details: |
-        I led several machine learning projects in Professor Yi Zhous lab. My role is to design faster or more stable algorithm in the large-scale machine learning and reinforcement learning environment. Results developed during this period were published on ICML, NeurIPS, and ICLR.   
+        I led several machine learning projects in Professor Yi Zhou's lab. My role is to design fast and stable algorithms in the large-scale machine learning and reinforcement learning. Results developed during this period were published on top conferences including ICML, NeurIPS, and ICLR.   
     
     - role: Teaching Assistant
       time: 2020 - 2021
