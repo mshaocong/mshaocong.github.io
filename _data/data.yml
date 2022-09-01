@@ -60,7 +60,7 @@ experiences:
       time: 2022.5 - 2022.8
       company: Lawrence Livermore National Security
       details: |
-        Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable modules. Test the    out-of-distribution robustness on CFD (computational fluid dynamics) problems.
+        (1) Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable modules. (2) Test the out-of-distribution robustness on CFD (computational fluid dynamics) problems. (3) Design a protein-ligand binding affinity prediction model for 3D point cloud data. 
 
     - role: Research Assistant
       time: 2019 - Present 
