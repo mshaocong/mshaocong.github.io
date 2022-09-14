@@ -145,6 +145,12 @@ publications:
         link: "https://arxiv.org/abs/2204.00006"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Kaiyi Ji, Yingbin Liang
         conference: "UAI. 2022."
+        
+      - title: " "
+        link: " "
+        authors: Ziyi Chen, Shaocong Ma, Yi Zhou 
+        conference: "NeurIPS. 2022."
+
 
 
 projects:
