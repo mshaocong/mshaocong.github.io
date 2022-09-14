@@ -138,18 +138,16 @@ publications:
         link: "https://arxiv.org/abs/2112.11663"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
         conference: "IEEE ISIT. 2022."
-       
-       
         
       - title: "Data Sampling Affects the Complexity of Online SGD over Dependent Data"
         link: "https://arxiv.org/abs/2204.00006"
         authors: Shaocong Ma, Ziyi Chen, Yi Zhou, Kaiyi Ji, Yingbin Liang
         conference: "UAI. 2022."
         
-      - title: " "
-        link: " "
+      - title: "Finding Correlated Equilibrium of Constrained Markov Game: A Primal-Dual Approach"
+        link: "https://openreview.net/forum?id=2-CflpDkezH"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou 
-        conference: "NeurIPS. 2022."
+        conference: "NeurIPS. 2022. (Acceptance rate: 25.6% )"
 
 
 
