@@ -52,7 +52,7 @@ career-profile:
         - Optimization Algorithms
         
         Academic services: 
-        - Reviewer/Program Committee. NeurIPS 2021, IEEE BigData 2021, IJCAI-ECAI 2022, ICML 2022, NeurIPS 2022, ICLR 2022.
+        - Reviewer/Program Committee. NeurIPS 2021, IEEE BigData 2021, IJCAI-ECAI 2022, ICML 2022, NeurIPS 2022, ICLR 2023.
         
  
 experiences: 
@@ -60,7 +60,7 @@ experiences:
       time: 2022.5 - 2022.8
       company: Lawrence Livermore National Security
       details: |
-        (1) Develop a backpropagation-free training algorithm for the graph neural network containing non-differentiable modules. (2) Test the out-of-distribution robustness on CFD (computational fluid dynamics) problems. (3) Design a protein-ligand binding affinity prediction model for 3D point cloud data. 
+        (1) Develop a backpropagation-free training algorithm for the GNN that contains non-differentiable modules. (2) Test the out-of-distribution robustness on large-scale CFD problems. (3) Design a multi-modal protein-ligand binding affinity prediction model for 3D point cloud data. 
 
     - role: Research Assistant
       time: 2019 - Present 
@@ -138,6 +138,8 @@ publications:
         link: "https://arxiv.org/abs/2112.11663"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
         conference: "IEEE ISIT. 2022."
+       
+       
         
       - title: "Data Sampling Affects the Complexity of Online SGD over Dependent Data"
         link: "https://arxiv.org/abs/2204.00006"
