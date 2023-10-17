@@ -4,7 +4,7 @@
 
 sidebar:
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Shaocong Ma
@@ -32,27 +32,22 @@ sidebar:
       - idiom: English
         level: Professional 
 
-    interests:
-      - item: Video Games
-        link:
-      - item: Anime
-        link: 
+    interests: #
  
 
 career-profile:
     title: Biography
     summary: |
       
-      Shaocong Ma is a fourth Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
+      Shaocong Ma is a fifth Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
-        My CV: [PDF-1](https://mshaocong.github.io/CV1.pdf) [PDF-2](https://mshaocong.github.io/CV2.pdf) 
+        My CV: [PDF](https://mshaocong.github.io/CV-Shaocong_Ma.pdf)  
         
-        Research interests: 
-        - Reinforcement Learning  
-        - Optimization Algorithms
+        ***Research interests***: 
+        - Optimization and Stochastic Approximation: Driven by real-world challenges, my research is centered on optimization techniques applied in diverse fields such as (multi-agent) reinforcement learning and physic-informed machine learning. More specifically, I prioritize creating data-efficient algorithms that are substantiated with theoretical guarantees. 
         
-        Academic services: 
-        - Reviewer/Program Committee. NeurIPS 2021; IEEE BigData 2021; IJCAI-ECAI 2022; ICML 2022; NeurIPS 2022; ICLR 2023; IJCAI 2023; ICML 2023; UAI 2023; NeurIPS 2023; TMLR; IEEE TETCI. 
+        ***Academic services***: 
+        - Reviewer/Program Committee: ICML; ICLR; NeurIPS; IEEE BigData; IJCAI; UAI; AAAI; AISTAT; TMLR; IEEE TETCI. 
         
  
 experiences: 
@@ -153,36 +148,36 @@ publications:
 
 
 
-projects:
-    title: Notes
-    intro: >
-      Here are some my past work, including some unpublished results and course notes.  
-    assignments: 
-      - title: Presentation Slides -  Towards Understanding Reinforcement Learning from Optimization Perspectives
-        link: "presentation.pdf"
-        tagline:  
+# projects:
+    # title: Notes
+    # intro: >
+      # Here are some my past work, including some unpublished results and course notes.  
+    # assignments: 
+      # - title: Presentation Slides -  Towards Understanding Reinforcement Learning from Optimization Perspectives
+        # link: "presentation.pdf"
+        # tagline:  
         
-      - title: Federated Learning - A simple algorithm that outperforms FedAvg
-        link: "project.pdf"
-        tagline:   
+      # - title: Federated Learning - A simple algorithm that outperforms FedAvg
+        # link: "project.pdf"
+        # tagline:   
         
-      - title: Probability Theory - A concentration inequality for data with arbitrary depedency  
-        link: "freedman.pdf"
-        tagline:  
+      # - title: Probability Theory - A concentration inequality for data with arbitrary depedency  
+        # link: "freedman.pdf"
+        # tagline:  
         
         
-      - title: Note on Financial Modeling
-        link: "Finance.pdf"
-        tagline:  
+      # - title: Note on Financial Modeling
+        # link: "Finance.pdf"
+        # tagline:  
         
-      - title: Note on Reinforcement Learning
-        link: "RL.pdf"
-        tagline:   
+      # - title: Note on Reinforcement Learning
+        # link: "RL.pdf"
+        # tagline:   
         
-      - title: Note on Actuarial Statistics
-        link: "actuarial.pdf"
-        tagline:   
+      # - title: Note on Actuarial Statistics
+        # link: "actuarial.pdf"
+        # tagline:   
         
-      - title: Note on Statistics
-        link: "Stat.pdf"
-        tagline:   
+      # - title: Note on Statistics
+        # link: "Stat.pdf"
+        # tagline:   
