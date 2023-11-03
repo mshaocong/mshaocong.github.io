@@ -25,12 +25,7 @@ sidebar:
     codewars:
     goodreads: #  
 
-    languages:
-      - idiom: Mandarin Chinese
-        level: Native
-
-      - idiom: English
-        level: Professional 
+    languages: # 
 
     interests: #
  
@@ -43,11 +38,12 @@ career-profile:
       
         My most-updated CV: [PDF](https://mshaocong.github.io/CV-Shaocong_Ma.pdf)  
         
-        ***Research interests***: 
-        - *Optimization and Stochastic Approximation*: Driven by real-world challenges, my research is centered on optimization techniques applied in diverse fields such as (multi-agent) reinforcement learning and physic-informed machine learning. More specifically, I prioritize creating data-efficient algorithms that are substantiated with theoretical guarantees. 
+        ***Research Interests***: 
+        - *Optimization and Stochastic Approximation*: Driven by real-world challenges, my research is centered on optimization techniques applied in diverse fields such as (multi-agent) reinforcement learning and physic-informed machine learning. More specifically, I prioritize creating data-efficient and environment-robust algorithms that are substantiated with theoretical guarantees.
         
-        ***Academic services***: 
-        - *Reviewer/Program Committee*: ICML; ICLR; NeurIPS; IEEE BigData; IJCAI; UAI; AAAI; AISTAT; TMLR; IEEE TETCI. 
+        ***Professional Services***: 
+        - *Conference Reviewer/Program Committee*: ICML; ICLR; NeurIPS; IEEE BigData; IJCAI; UAI; AAAI; AISTAT.
+        - *Journal Reviewer*: Transactions on Machine Learning Research (TMLR); IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI); European Journal of Control.
         
  
 experiences: 
@@ -55,7 +51,13 @@ experiences:
       time: 2022.5 - 2022.8
       company: Lawrence Livermore National Security
       details: |
-        (1) Developed a backpropagation-free training algorithm for the fluid flow prediction problem that contains non-differentiable modules. (2) Designed and implemented the meta-learning model for out-of-distribution inferences on large-scale CFD problems. 
+        (1) Designed a hybrid model with external black-box PDE solvers, addressing the non-differentiability challenges in fluid flow predictions. (2) Rigorously assessed the Physics-Informed Graph Neural Network's resilience in out-of-distribution scenarios, achieving comparable performance with differentiable solvers.
+        
+    - role: Research Collaborator (AI4Science)
+      time: 2022.8 - Present
+      company: Lawrence Livermore National Security
+      details: |
+        (1) Integrated a MAML-type meta-learning model with a non-differentiable external PDE solver, enhancing fluid flow prediction capabilities. (2) Led and managed experiments progress using Git and conducted comprehensive analysis of results.
 
     - role: Research Assistant
       time: 2019 - Present 
@@ -82,25 +84,24 @@ experiences:
           - PSTAT 175: Survival Analysis
  
 education:
+    - degree: B.S. in Statistics
+      university: Sichuan University
+      time: 2013 - 2017
+      details: |
+        GPA: 3.6/4.0
+        
+    - degree: M.A. in Statistics
+      university: University of California, Santa Barbara
+      time: 2017 - 2019
+      details: |
+        GPA: 3.9/4.0
+        
     - degree: Ph.D. in Electrical and Computer Engineering
       university: University of Utah
       time: 2019 - 2024
       details: |
         GPA: 4.0/4.0
         
-          
-    - degree: M.A. in Statistics
-      university: University of California, Santa Barbara
-      time: 2017 - 2019
-      details: |
-        GPA: 3.9/4.0
-    - degree: B.S. in Statistics
-      university: Sichuan University
-      time: 2013 - 2017
-      details: |
-        GPA: 3.6/4.0
-
-
 publications:
     title: Publications
     intro: |
@@ -128,7 +129,6 @@ publications:
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
         conference: "ICLR. 2022. (Acceptance rate: 32.3%)"
         
-       
       - title: "Accelerated Proximal Alternating Gradient-Descent-Ascent for Nonconvex Minimax Machine Learning"
         link: "https://arxiv.org/abs/2112.11663"
         authors: Ziyi Chen, Shaocong Ma, Yi Zhou
@@ -149,8 +149,14 @@ publications:
       - title: "Decentralized Robust V-Learning for Solving Markov Games with Model Uncertainty."
         link: 
         authors: Shaocong Ma, Ziyi Chen, Shaofeng Zou, Yi Zhou
-        conference: Submitted.
-      - title: "When Non-Differentiable PDE Solver Meets Deep Learning: Partially-Differentiable Learning for Efficient Fluid Flow Prediction"
+        conference: Accepted by JMLR on November 2nd, 2023.
+        
+      - title: "End-to-End Mesh Optimization of a Hybrid Deep Learning Black-Box PDE Solver."
+        link: 
+        authors: Shaocong Ma, James Diffenderfer, Bhavya Kailkhura, and Yi Zhou
+        conference: NeurIPS 2023 (ML4PS Workshop).
+        
+      - title: "When Non-Differentiable PDE Solver Meets Deep Learning: Partially Differentiable Learning for Efficient Fluid Flow Prediction"
         link: 
         authors: Shaocong Ma, James Diffenderfer, Bhavya Kailkhura, and Yi Zhou
         conference: Submitted.
