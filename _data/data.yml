@@ -165,9 +165,9 @@ publications:
 
 
 projects:
-    title: Session/Lab Notes, Presentation Slides, and Course Project
+    title: Notes
     intro: >
-      Here are some my past work, including some unpublished results and course notes.  
+      Session/Lab Notes, Presentation Slides, and Course Projects. 
     assignments: 
       - title: Presentation Slides - Towards Understanding Reinforcement Learning from Optimization Perspectives
         link: "presentation1.pdf"
