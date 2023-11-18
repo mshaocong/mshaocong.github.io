@@ -39,11 +39,12 @@ career-profile:
         My most-updated CV: [PDF](https://mshaocong.github.io/CV-Shaocong_Ma.pdf)  
         
         ***Research Interests***: 
-        - *Optimization and Stochastic Approximation*: Driven by real-world challenges, my research is centered on optimization techniques applied in diverse fields such as (multi-agent) reinforcement learning and physic-informed machine learning. More specifically, I prioritize creating data-efficient and environment-robust algorithms that are substantiated with theoretical guarantees.
+        - *Optimization and Reinforcement Learning*: Driven by real-world challenges, my research is centered on optimization techniques applied in diverse fields such as (multi-agent) reinforcement learning and physic-informed machine learning. More specifically, I prioritize creating data-efficient and environment-robust algorithms that are substantiated with theoretical guarantees.
         
         ***Professional Services***: 
         - *Conference Reviewer/Program Committee*: ICML; ICLR; NeurIPS; IEEE BigData; IJCAI; UAI; AAAI; AISTAT.
         - *Journal Reviewer*: Transactions on Machine Learning Research (TMLR); IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI); European Journal of Control.
+        - *Workshop*: ICLR 2024 Blogpost.
         
  
 experiences: 
@@ -149,7 +150,7 @@ publications:
       - title: "Decentralized Robust V-Learning for Solving Markov Games with Model Uncertainty."
         link: 
         authors: Shaocong Ma, Ziyi Chen, Shaofeng Zou, Yi Zhou
-        conference: Accepted by JMLR on November 2nd, 2023.
+        conference: JMLR 2023.
         
       - title: "End-to-End Mesh Optimization of a Hybrid Deep Learning Black-Box PDE Solver."
         link: 
@@ -163,18 +164,22 @@ publications:
 
 
 
-# projects:
-    # title: Notes
-    # intro: >
-      # Here are some my past work, including some unpublished results and course notes.  
-    # assignments: 
-      # - title: Presentation Slides -  Towards Understanding Reinforcement Learning from Optimization Perspectives
-        # link: "presentation.pdf"
-        # tagline:  
+projects:
+    title: Session/Lab Notes, Presentation Slides, and Course Project
+    intro: >
+      Here are some my past work, including some unpublished results and course notes.  
+    assignments: 
+      - title: Presentation Slides - Towards Understanding Reinforcement Learning from Optimization Perspectives
+        link: "presentation1.pdf"
+        tagline:  
         
-      # - title: Federated Learning - A simple algorithm that outperforms FedAvg
-        # link: "project.pdf"
-        # tagline:   
+      - title: Presentation Slides - Bridging Practical Needs and Theoretical Analysis of Machine Learning Algorithms
+        link: "presentation2.pdf"
+        tagline:  
+        
+      - title: Course Project - A simple algorithm that outperforms FedAvg
+        link: "project.pdf"
+        tagline:   
         
       # - title: Probability Theory - A concentration inequality for data with arbitrary depedency  
         # link: "freedman.pdf"
@@ -185,13 +190,13 @@ publications:
         # link: "Finance.pdf"
         # tagline:  
         
-      # - title: Note on Reinforcement Learning
-        # link: "RL.pdf"
-        # tagline:   
+      - title: Course Note on Reinforcement Learning
+        link: "RL.pdf"
+        tagline:   
         
-      # - title: Note on Actuarial Statistics
-        # link: "actuarial.pdf"
-        # tagline:   
+      - title: Session Note on Actuarial Statistics
+        link: "actuarial.pdf"
+        tagline:   
         
       # - title: Note on Statistics
         # link: "Stat.pdf"
