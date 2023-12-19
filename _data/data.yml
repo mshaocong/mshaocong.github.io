@@ -150,12 +150,12 @@ publications:
         conference: "NeurIPS. 2022. (Acceptance rate: 25.6% )"
         
       - title: "Decentralized Robust V-Learning for Solving Markov Games with Model Uncertainty."
-        link: 
+        link: "https://jmlr.org/papers/v24/23-0310.html"
         authors: Shaocong Ma, Ziyi Chen, Shaofeng Zou, Yi Zhou
         conference: JMLR 2023.
         
       - title: "End-to-End Mesh Optimization of a Hybrid Deep Learning Black-Box PDE Solver."
-        link: 
+        link: "https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_8.pdf"
         authors: Shaocong Ma, James Diffenderfer, Bhavya Kailkhura, and Yi Zhou
         conference: NeurIPS 2023 (ML4PS Workshop).
         
