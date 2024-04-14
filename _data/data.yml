@@ -178,6 +178,10 @@ projects:
       - title: Presentation Slides - Bridging Practical Needs and Theoretical Analysis of Machine Learning Algorithms
         link: "presentation2.pdf"
         tagline:  
+    
+      - title: Presentation Slides -  Efficient and Resilient Algorithms for Stochastic Optimization & Reinforcement Learning 
+        link: "Defense_Slides.pdf"
+        tagline: 
         
       - title: Course Project - A simple algorithm that outperforms FedAvg
         link: "project.pdf"
