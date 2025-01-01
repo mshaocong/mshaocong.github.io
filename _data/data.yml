@@ -8,7 +8,7 @@ sidebar:
 
     # Profile information
     name: Shaocong Ma
-    tagline: Ph.D. Candidate in ECE
+    tagline: Ph.D. in Electrical and Computer Engineering
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -34,7 +34,7 @@ career-profile:
     title: Biography
     summary: |
       
-      Shaocong Ma is a fifth Ph.D. student at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
+      Shaocong Ma is a postdoc at University of Maryland, hosted by Professor Heng Huang. He earned the Ph.D. degree in Electrical and Computer Engineering at University of Utah, supervised by [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Before, Shaocong earned an M.A. degree in Statistics at University of California, Santa Barbara, and a B.S. degree in Statistics at Sichuan University.  
       
         My most-updated CV: [PDF](https://mshaocong.github.io/CV-Shaocong_Ma.pdf) 
         
