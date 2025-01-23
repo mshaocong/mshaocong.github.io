@@ -1,32 +1,89 @@
-{% assign publications = site.data.data.publications %}
-{% if publications %}
-<section class="section publications-section">
 
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ publications.title }}
-  </h2>
+<h3>Journal</h3>
+<ul>
+<li> 
+  <strong>Deep learning of PDE Correctionand Mesh Adaption without Automatic Differentiation</strong><br>
+  <span style="font-size: smaller; color: grey;">Machine Learning, 2025.</span> <br>
+  <span style="font-size: smaller; color: grey;">Shaocong Ma, James Diffenderfer, Bhavya Kailkhura, and Yi Zhou.</span>  
+</li>
+<li>
+  <a href="https://jmlr.org/papers/v24/23-0310.html" target="_blank">
+  <strong>Decentralized Robust V-Learning for Solving Markov Games with Model Uncertainty</strong></a><br>
+  <span style="font-size: smaller; color: grey;">JMLR, 2023.</span> <br>
+  <span style="font-size: smaller; color: grey;">Shaocong Ma, Ziyi Chen, Shaofeng Zou, Yi Zhou.</span> 
+</li>
+</ul>
 
-  {% if publications.intro %}
-  <div class="intro">
-    {{ publications.intro | markdownify }}
-  </div><!--//intro-->
-  {% endif %}
+<h3>Conference</h3>
+<ul>
+  <li>
+  <a href="https://openreview.net/forum?id=ywFOSIT9ik" target="_blank">
+    <strong>Revisiting Zeroth-Order Optimization: Minimum-Variance Two-Point Estimators and Directionally Aligned Perturbations</strong></a><br>
+    <span style="font-size: smaller; color: grey;">ICLR, 2025.</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, Heng Huang.</span> 
+  </li>
+  <li>
+    <a href="https://openreview.net/forum?id=2-CflpDkezH" target="_blank">
+    <strong>Finding Correlated Equilibrium of Constrained Markov Game: A Primal-Dual Approach</strong></a><br>
+    <span style="font-size: smaller; color: grey;">NeurIPS, 2022.</span> <br>
+    <span style="font-size: smaller; color: grey;">Ziyi Chen, Shaocong Ma, Yi Zhou.</span> 
+  </li>
+  <li>
+    <a href="https://proceedings.mlr.press/v180/ma22a/ma22a.pdf" target="_blank">
+    <strong>Data Sampling Affects the Complexity of Online SGD over Dependent Data</strong></a><br>
+    <span style="font-size: smaller; color: grey;">UAI, 2022.</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, Ziyi Chen, Yi Zhou, Kaiyi Ji, Yingbin Liang.</span> 
+  </li>
+  <li>
+    <a href="https://ieeexplore.ieee.org/abstract/document/9834691/" target="_blank">
+    <strong>Accelerated Proximal Alternating Gradient-Descent-Ascent for Nonconvex Minimax Machine Learning</strong></a><br>
+    <span style="font-size: smaller; color: grey;">IEEE ISIT, 2022.</span> <br>
+    <span style="font-size: smaller; color: grey;">Ziyi Chen, Shaocong Ma, Yi Zhou.</span> 
+  </li>
+  <li>
+    <a href="https://openreview.net/forum?id=IvepFxYRDG" target="_blank">
+    <strong>Sample Efficient Stochastic Policy Extragradient Algorithm for Zero-Sum Markov Game</strong></a><br>
+    <span style="font-size: smaller; color: grey;">ICLR, 2022.</span> <br>
+    <span style="font-size: smaller; color: grey;">Ziyi Chen, Shaocong Ma, Yi Zhou.</span> 
+  </li>
+  <li>
+    <a href="https://openreview.net/forum?id=6t_dLShIUyZ" target="_blank">
+    <strong>Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity</strong></a><br>
+    <span style="font-size: smaller; color: grey;">ICLR, 2021.</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, Ziyi Chen, Yi Zhou, Shaofeng Zou.</span> 
+  </li>
+  <li>
+    <a href="https://proceedings.neurips.cc/paper/2020/file/a992995ef4f0439b258f2360dbb85511-Paper.pdf" target="_blank">
+    <strong>Variance-Reduced Off-Policy TDC Learning: Non-Asymptotic Convergence Analysis</strong></a><br>
+    <span style="font-size: smaller; color: grey;">NeurIPS, 2020.</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, Yi Zhou, Shaofeng Zou.</span> 
+  </li>
+  <li>
+    <a href="http://proceedings.mlr.press/v119/ma20e/ma20e.pdf" target="_blank">
+    <strong>Understanding the Impact of Model Incoherence on Convergence of Incremental SGD with Random Reshuffle</strong></a><br>
+    <span style="font-size: smaller; color: grey;">ICML, 2020.</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, Yi Zhou.</span> 
+  </li>
+</ul>
 
-  {% for publication in publications.papers %}
-  <div class="item">
-    {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
-    {% else %}
-      <li>{{ publication.title }}</li>
-    {% endif %}
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
-  </div><!--//item-->
-  {% endfor %}
 
-</section><!--//section-->
-{% endif %}
+<h3>Book</h3>
+<ul>
+<li>  
+  <a href="https://www.nowpublishers.com/article/Details/OPT-045" target="_blank">
+  <strong>Stochastic Optimization Methods for Policy Evaluation in Reinforcement Learning</strong></a><br>
+  <span style="font-size: smaller; color: grey;">Foundations and Trends® in Optimization, 2024.</span> <br>
+  <span style="font-size: smaller; color: grey;">Yi Zhou, Shaocong Ma.</span> 
+</li>
+</ul>
+
+
+<h3>Workshop</h3>
+<ul>
+  <li>
+    <a href="https://ml4physicalsciences.github.io/2023/files/NeurIPS_ML4PS_2023_8.pdf" target="_blank">
+    <strong>End-to-End Mesh Optimization of a Hybrid Deep Learning Black-Box PDE Solver</strong></a><br>
+    <span style="font-size: smaller; color: grey;">NeurIPS, 2023 (ML4PS Workshop).</span> <br>
+    <span style="font-size: smaller; color: grey;">Shaocong Ma, James Diffenderfer, Bhavya Kailkhura, and Yi Zhou.</span> 
+  </li>
+</ul>
