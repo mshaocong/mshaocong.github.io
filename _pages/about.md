@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Shaocong Ma is a postdoctoral researcher at [University of Maryland Institute for Advanced Computer Studies (UMIACS)](https://www.umiacs.umd.edu/), working under the supervision of Professor [Heng Huang](https://www.cs.umd.edu/~heng/). He received his Ph.D. in Electrical and Computer Engineering from the University of Utah, where he was advised by Professor [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Previously, he completed an M.A. in Statistics at the Department of Statistics and Applied Probability, the University of California, Santa Barbara, and earned his B.S. in Statistics at the School of Mathematics, Sichuan University.  
+Shaocong Ma is a postdoctoral researcher at [University of Maryland Institute for Advanced Computer Studies (UMIACS)](https://www.umiacs.umd.edu/), working under the supervision of Professor [Heng Huang](https://www.cs.umd.edu/~heng/). He received his Ph.D. in Electrical and Computer Engineering from the University of Utah, where he was advised by Professor [Yi Zhou](https://sites.google.com/site/yizhouhomepage/). Previously, he completed an M.A. in Statistics at the University of California, Santa Barbara, and earned his B.S. in Statistics at Sichuan University.  
 
 Research Interests
 ======
