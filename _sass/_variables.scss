@@ -102,11 +102,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : #1756b3;  /* Darker blue color */
+$link-color-hover           : #0d3369;  /* Even darker blue on hover */
+$link-color-visited         : $link-color;  /* Same as normal to maintain consistency */
+$masthead-link-color        : $dark-gray;  /* Gray color for header links */
+$masthead-link-color-hover  : $darker-gray;  /* Darker gray for header links on hover */
 
 
 /*

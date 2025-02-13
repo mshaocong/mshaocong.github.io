@@ -22,7 +22,7 @@ Education
   <br><span style="font-size: smaller; color: grey;">Sichuan University</span>
   <br><span style="font-size: smaller; color: grey;">2015.9 - 2019.6</span> 
 
-Work Experiences
+Research Experiences
 -----
 * *Postdoctoral Researcher*
   <br><span style="font-size: smaller; color: grey;">University of Maryland</span>
@@ -40,7 +40,7 @@ Work Experiences
   <br><span style="font-size: smaller; color: grey;">University of Utah</span>
   <br><span style="font-size: smaller; color: grey;">2019.8 - 2024.5</span>
   <br><span style="font-size: smaller; color: grey;">Supervisor: Professor Yi Zhou</span><br>
-  The duties included leading machine learning projects in Professor Yi Zhou’s lab, designing fast and stable algorithms for large-scale machine learning and reinforcement learning, and publishing results in top conferences such as ICML, NeurIPS, and ICLR, as well as top journals like JMLR.
+  The duties included leading machine learning projects in Professor Yi Zhou's lab, designing fast and stable algorithms for large-scale machine learning and reinforcement learning, and publishing results in top conferences such as ICML, NeurIPS, and ICLR, as well as top journals like JMLR.
 
 
 Publications
@@ -56,10 +56,27 @@ Teaching
  
 Professional Services
 -----
-- *Conference Reviewer/Program Committee*: ICML; ICLR; NeurIPS; IEEE BigData; IJCAI; UAI; AAAI; AISTAT.
-- *Journal Reviewer*: Transactions on Machine Learning Research (TMLR); IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI); European Journal of Control.
-- *Workshop Reviewer*: ICLR Blogpost.
- 
+* Conference Reviewer/Program Committee
+  * International Conference on Machine Learning (ICML)
+  * International Conference on Learning Representations (ICLR)
+  * Advances in Neural Information Processing Systems (NeurIPS)
+  * IEEE International Conference on Big Data (IEEE BigData)
+  * International Joint Conference on Artificial Intelligence (IJCAI)
+  * Conference on Uncertainty in Artificial Intelligence (UAI)
+  * AAAI Conference on Artificial Intelligence (AAAI)
+  * International Conference on Artificial Intelligence and Statistics (AISTATS)
+  * Reinforcement Learning Conference (RLC)
+
+* Journal Reviewer
+  * Transactions on Machine Learning Research (TMLR)
+  * IEEE Transactions on Signal Processing
+  * Numerical Algorithms
+  * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
+  * European Journal of Control
+
+* Workshop Reviewer
+  * ICLR 2024 Blogpost
+
 Skills
 ----- 
 * Machine Learning & Deep Learning

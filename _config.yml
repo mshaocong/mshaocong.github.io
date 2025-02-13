@@ -7,7 +7,7 @@
 # server process. 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "SCMA"
+title                    : "Shaocong Ma"
 title_separator          : "-"
 name                     : &name "Shaocong Ma"
 description              : &description "personal description"

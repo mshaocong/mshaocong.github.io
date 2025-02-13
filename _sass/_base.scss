@@ -112,13 +112,71 @@ blockquote {
 /* links */
 
 a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
   &:focus {
     @extend %tab-focus;
   }
 
-  &:hover,
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $link-color-visited;
+  }
+
   &:active {
     outline: 0;
+  }
+}
+
+
+
+.bio {
+  color: $info-color;
+  text-decoration: none;
+  padding: 0.1em 0.1em; // Adds space around the text
+  border-radius: 4px;   // Softens the element's edges
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: lighten($info-color, 50%);
+    color: mix($info-color, #000, 80%);
+    transform: translateY(-2px); // Subtle lift effect on hover
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds depth
+  }
+
+  &:visited {
+    color: mix($info-color, $gray, 80%);
+    
+    &:hover {
+      color: mix($info-color, #000, 80%);
+    }
+  }
+
+  &:active {
+    color: mix($info-color, #000, 60%);
+    transform: translateY(0); // Resets lift when active
+    box-shadow: none;         // Removes shadow on click
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($info-color, 0.4); // Focus indicator for accessibility
+  }
+}
+
+
+
+/* Special styling for navigation and sidebar links */
+.nav__items a,
+.sidebar a {
+  &::after {
+    display: none;
   }
 }
 
