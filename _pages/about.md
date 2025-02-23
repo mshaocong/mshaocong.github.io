@@ -20,11 +20,11 @@ redirect_from:
     max-width: 85%;           /* Ensures content doesn't overflow container */
     color: #444;
     font-size: 0.9em;
-    text-align: justify;
+    text-align: left;
 }
 </style>
 
-Shaocong Ma is a postdoctoral researcher at <a href="https://www.umiacs.umd.edu/"  class="bio">UMIACS</a>, working under the supervision of Professor <a href="https://www.cs.umd.edu/~heng/"  class="bio">Heng Huang</a>. He received his Ph.D. in Electrical and Computer Engineering from the *University of Utah*, where he was advised by Professor <a href="https://sites.google.com/site/yizhouhomepage/"  class="bio">Yi Zhou</a>. Previously, he completed an M.A. in Statistics at the *University of California, Santa Barbara*, and earned his B.S. in Statistics at *Sichuan University*.  
+Shaocong Ma is a postdoctoral researcher at <a href="https://www.umiacs.umd.edu/"  class="bio">UMIACS</a>, working under the supervision of Professor <a href="https://www.cs.umd.edu/~heng/"  class="bio">Heng Huang</a>. He received his Ph.D. in Electrical and Computer Engineering from the ***University of Utah***, where he was advised by Professor <a href="https://sites.google.com/site/yizhouhomepage/"  class="bio">Yi Zhou</a>. Previously, he completed an M.A. in Statistics at the ***University of California, Santa Barbara***, and earned his B.S. in Statistics at ***Sichuan University***.  
 
 For more information, refer to <a href="/cv/"  class="bio">his CV</a> or <a href="/files/Research_Summary.pdf"  class="bio">research statement</a>.
 

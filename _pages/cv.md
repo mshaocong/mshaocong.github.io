@@ -84,7 +84,7 @@ Skills
   * Reinforcement Learning
   * Graph Neural Networks
   * Classical Machine Learning & Statistical Methods
-
+s
 * Optimization & Numerical Methods
   * PDE-Based Modeling
   * Hybrid Differentiable & Black-Box Solvers
