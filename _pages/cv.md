@@ -20,7 +20,7 @@ Education
   <br><span style="font-size: smaller; color: grey;">2018.9 - 2019.6</span>  
 * *B.S. in Statistics*
   <br><span style="font-size: smaller; color: grey;">Sichuan University</span>
-  <br><span style="font-size: smaller; color: grey;">2015.9 - 2019.6</span> 
+  <br><span style="font-size: smaller; color: grey;">2013.9 - 2017.6</span> 
 
 Research Experiences
 -----
