@@ -17,7 +17,7 @@ Education
   <br><span style="font-size: smaller; color: grey;">2019.8 - 2024.5</span> 
 * *M.A. in Statistics*
   <br><span style="font-size: smaller; color: grey;">University of California, Santa Barbara</span>
-  <br><span style="font-size: smaller; color: grey;">2018.9 - 2019.6</span>  
+  <br><span style="font-size: smaller; color: grey;">2017.9 - 2019.6</span>  
 * *B.S. in Statistics*
   <br><span style="font-size: smaller; color: grey;">Sichuan University</span>
   <br><span style="font-size: smaller; color: grey;">2013.9 - 2017.6</span> 
