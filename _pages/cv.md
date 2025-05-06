@@ -71,6 +71,7 @@ Professional Services
 * Journal Reviewer
   * Transactions on Machine Learning Research (TMLR)
   * IEEE Transactions on Signal Processing
+  * IEEE Transactions on Networking (ToN)
   * Numerical Algorithms
   * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   * European Journal of Control
