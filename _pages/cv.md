@@ -65,6 +65,7 @@ Professional Services
   * Conference on Uncertainty in Artificial Intelligence (UAI)
   * AAAI Conference on Artificial Intelligence (AAAI)
   * International Conference on Artificial Intelligence and Statistics (AISTATS)
+    * Best Reviewer Award (AISTATS 2025) 
   * Reinforcement Learning Conference (RLC)
 
 * Journal Reviewer
