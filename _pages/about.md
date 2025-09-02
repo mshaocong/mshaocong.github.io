@@ -26,7 +26,7 @@ redirect_from:
 
 Shaocong Ma is a postdoctoral researcher at <a href="https://www.umiacs.umd.edu/"  class="bio">UMIACS</a>, working under the supervision of Professor <a href="https://www.cs.umd.edu/~heng/"  class="bio">Heng Huang</a>. He received his Ph.D. in Electrical and Computer Engineering from the ***University of Utah***, where he was advised by Professor <a href="https://sites.google.com/site/yizhouhomepage/"  class="bio">Yi Zhou</a>. Previously, he completed an M.A. in Statistics at the ***University of California, Santa Barbara***, and earned his B.S. in Statistics at ***Sichuan University***.  
 
-For more information, refer to <a href="/cv/"  class="bio">his CV</a> or <a href="/files/Research_Statement.pdf"  class="bio">research statement</a>.
+For more information, refer to <a href="/cv/"  class="bio">his CV</a> (<a href="/files/Resume.pdf"  class="bio">PDF</a>) or <a href="/files/Research_Statement.pdf"  class="bio">research statement</a>.
 
 ## 📊 Research Interests
 
@@ -36,6 +36,7 @@ For more information, refer to <a href="/cv/"  class="bio">his CV</a> or <a href
 
 🔥 News
 -----
+  - **2025.04**: Best Reviewer Award by AISTATS 2025!
   - **2025.02**: One paper selected as a <strong>spotlight</strong> by ICLR 2025! 
   - **2024.06**: Joined UMD as a postdoctoral researcher. 
 

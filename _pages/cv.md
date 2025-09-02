@@ -7,6 +7,9 @@ redirect_from:
   - /resume
 ---
 
+
+  <div class="wordwrap">You can also find the PDF version <a href="/files/Resume.pdf"  class="bio">here</a>.</div>
+
 {% include base_path %}
 
 
@@ -75,6 +78,7 @@ Professional Services
   * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   * European Journal of Control
   * Numerical Algorithms
+  * Scientific Reports
 
 * Workshop Reviewer
   * ICLR 2024 Blogpost
