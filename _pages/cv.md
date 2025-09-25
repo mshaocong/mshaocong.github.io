@@ -7,6 +7,9 @@ redirect_from:
   - /resume
 ---
 
+
+  <div class="wordwrap">You can also find the PDF version <a href="/files/Resume.pdf"  class="bio">here</a>.</div>
+
 {% include base_path %}
 
 
@@ -47,7 +50,21 @@ Publications
 ----- 
 {% include publications.html %}
 
- 
+
+Honors & Awards
+----- 
+* 2025
+  *  NeurIPS 2025, Spotlight (top 3% of submissions) 
+  *  ICLR 2025, Spotlight (top 5% of submissions)
+  *  AISTATS 2025, Best Reviewer Award
+* 2024
+  *  Graduate 1st Place at University of Utah
+  *  Invited Monograph Contributor, Now Publishers (Foundations and Trends in Optimization)
+* 2023
+  *  Invited Participant (fully funded), NSF-Simons MoDL Annual Meeting, Simons Foundation, New York
+* Before 2023
+  *  Excellence Scholarship, The College of Mathematics, Sichuan University
+  *  Second Prize, Chinese Mathematics Competitions for College Students, Sichuan Province Division
 
 Teaching 
 ----- 
@@ -75,6 +92,7 @@ Professional Services
   * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   * European Journal of Control
   * Numerical Algorithms
+  * Scientific Reports
 
 * Workshop Reviewer
   * ICLR 2024 Blogpost
