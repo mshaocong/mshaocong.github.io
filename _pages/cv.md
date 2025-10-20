@@ -54,6 +54,7 @@ Publications
 Honors & Awards
 ----- 
 * 2025
+  *  NeurIPS 2025, Top Reviewer Award
   *  NeurIPS 2025, Spotlight (top 3% of submissions) 
   *  ICLR 2025, Spotlight (top 5% of submissions)
   *  AISTATS 2025, Best Reviewer Award

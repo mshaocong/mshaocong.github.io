@@ -30,7 +30,7 @@ For more information, refer to <a href="/cv/"  class="bio">my CV</a> or <a href=
 
 ## 📊 Research Interests
 
-- **Memory-efficient algorithms for LLM fine-tuning**: I develop and evaluate memory-efficient fine-tuning techniques (*e.g.*, LoRA and Zeroth-Order Optimization) to reduce GPU memory footprint while preserving model performance.
+- **Memory-efficient algorithms for LLM fine-tuning**: I focus on designing memory-efficient fine-tuning techniques (*e.g.*, LoRA and Zeroth-Order Optimization) to reduce GPU memory footprint while preserving model performance.
 
 - **Robust Optimization & RL Theory**:  I develop scalable algorithms for reinforcement learning and large-scale optimization, focusing on robustness against uncertainties arising from dependent data and dynamic environments.
 
@@ -38,7 +38,8 @@ For more information, refer to <a href="/cv/"  class="bio">my CV</a> or <a href=
 
 🔥 News
 -----
-  - **2025.09**: One paper selected as a <strong>spotlight</strong> by NeurIPS 2025!
+  - **2025.10**: Top Reviewer Award by NeurIPS 2025!
+  - **2025.09**: Two papers accepted by NeurIPS 2025 (one <strong>spotlight</strong>)!
   - **2025.04**: Best Reviewer Award by AISTATS 2025!
   - **2025.02**: One paper selected as a <strong>spotlight</strong> by ICLR 2025! 
   - **2024.06**: Joined UMD as a postdoctoral researcher!
