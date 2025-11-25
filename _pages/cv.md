@@ -83,12 +83,12 @@ Professional Services
   * Conference on Uncertainty in Artificial Intelligence (UAI)
   * AAAI Conference on Artificial Intelligence (AAAI)
   * International Conference on Artificial Intelligence and Statistics (AISTATS)
-    * Best Reviewer Award (AISTATS 2025) 
   * Reinforcement Learning Conference (RLC)
 
 * Journal Reviewer
   * Transactions on Machine Learning Research (TMLR)
-  * IEEE Transactions on Signal Processing
+  * IEEE Transactions on Information Theory (TIT)
+  * IEEE Transactions on Signal Processing (TSP)
   * IEEE Transactions on Networking (ToN)
   * IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)
   * European Journal of Control
