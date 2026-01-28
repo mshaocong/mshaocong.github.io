@@ -38,6 +38,7 @@ For more information, refer to <a href="/cv/"  class="bio">my CV</a> or <a href=
 
 🔥 News
 -----
+  - **2026.01**: Two papers accepted by ICLR 2026!
   - **2025.10**: Top Reviewer Award by NeurIPS 2025!
   - **2025.09**: Two papers accepted by NeurIPS 2025 (one <strong>spotlight</strong>)!
   - **2025.04**: Best Reviewer Award by AISTATS 2025!
